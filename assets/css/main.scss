@@ -1,9 +1,781 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter dashes are required
 search: false
 ---
 
-@charset "utf-8";
+@charset "UTF-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Import the Google Font for 'Inter'
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+// 1. Import Minimal Mistakes default variables
+@import "minimal-mistakes/variables";
+
+// 2. Override theme variables to set 'Inter' as the default font everywhere.
+$sans-serif: 'Inter', sans-serif;
+$base-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+
+// 3. Import the rest of the theme's styles
+@import "minimal-mistakes";
+
+/*
+==========================================================================
+    ANIMATIONS & KEYFRAMES
+==========================================================================
+*/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*
+==========================================================================
+    REAL IMAGE SECTIONS
+==========================================================================
+*/
+
+.cabo-section-break {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0em;
+  margin-bottom: 4em;
+  overflow: hidden;
+}
+
+.cabo-section-break::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.cabo-section-break h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  max-width: none;
+  margin: 0;
+}
+
+.cabo-beach {
+  background-image: url('/assets/images/cabo_beach.png');
+}
+
+.cabo-luxury {
+  background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+}
+
+.cabo-sunset {
+  background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+}
+
+/*
+==========================================================================
+    MAIN LAYOUT STYLES
+==========================================================================
+*/
+
+.layout--sales-letter {
+  overflow-x: hidden;
+
+  // Hide the default header and footer
+  .masthead, .page__footer {
+    display: none !important;
+  }
+
+  // Ensure the main content area has no default padding or constraints
+  #main {
+    max-width: none !important;
+    display: block !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page {
+    width: 100% !important;
+    float: none !important;
+    padding-right: 0 !important;
+  }
+
+  // --- Typography & Content Widths ---
+  .page__content {
+    // Remove the uniform background - we'll handle this per section now
+    
+    p, ul, ol {
+      font-weight: 400; 
+      font-size: 18px; 
+      line-height: 28px;
+      max-width: 780px; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    
+    h1 {
+      font-weight: 900; 
+      font-size: 64px; 
+      line-height: 72px;
+    }
+    
+    h2 {
+      font-weight: 700; 
+      font-size: 40px; 
+      line-height: 48px;
+      max-width: 1000px; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    
+    h3 {
+      font-weight: 700; 
+      font-size: 25px; 
+      line-height: 32px;
+      max-width: 750px; 
+      margin-left: auto; 
+      margin-right: auto;
+    }
+  }
+
+  // --- Section Background Alternations ---
+  .section-white {
+    background: linear-gradient(180deg, #ffffff 100%, #fafbfc 0%);
+    padding: 1em 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  .section-blue {
+    background: linear-gradient(180deg, #f8fafc 0%, #f0f9ff 100%);
+    padding: 1em 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  .section-gray {
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+    padding: 1em 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  .section-green {
+    background: linear-gradient(180deg, #f8fefa 0%, #e6fcf0 100%);
+    padding: 1em 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  // Apply section backgrounds to specific areas
+.timeline-section {
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-container {
+  max-width: 900px;
+  margin: 3em auto;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr;
+}
+  
+  // --- Hero Section ---
+  .hero-section {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 4em 1.5em;
+    margin-bottom: 3em;
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 55, 72, 0.5);
+    z-index: 1;
+  }
+
+  .hero-section > div {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 1200px;
+  }
+
+  .hero-section h1 {
+    font-weight: 900 !important;
+    font-size: 3.5rem !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+
+  .hero-section strong {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: 700 !important;
+    font-size: 1.30rem !important;
+    color: #fff !important;
+    opacity: 0.9;
+  }
+
+  .hero-section em {
+    display: block;
+    margin-top: 1em;
+    font-weight: 400 !important;
+    font-size: 1.30rem !important;
+    font-style: italic !important;
+    line-height: 1.5 !important;
+    color: #fff !important;
+    opacity: 0.9;
+  }
+
+  .hero-section p {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // --- Author Block ---
+  .author-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 850px;
+    margin: 2.5em auto;
+    padding: 1em;
+    background: 
+      linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%),
+      radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.3s;
+    transition: all 0.3s ease;
+  }
+
+  .author-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+
+  .author-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .author-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .author-brokerage-logo {
+    max-height: 70px;
+    width: auto;
+    margin-left: auto;
+  }
+  
+  // --- Key Takeaway Block ---
+  .key-takeaway {
+    max-width: 780px;
+    margin: 2.5em auto;
+    padding: 1em 1em 1em 1.5em;
+    border-left: 5px solid #0ea5e9;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #2d3748;
+    position: relative;
+  }
+
+  .key-takeaway::before {
+    content: '💡';
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    opacity: 0.3;
+  }
+
+  .key-takeaway p {
+    margin-bottom: 0;
+  }
+
+  // --- CTA Button Styles ---
+  .btn {
+    display: inline-block;
+    padding: 1.2em 2.5em;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn--success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: 2px solid #28a745;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.2);
+    animation: pulse 2s infinite;
+  }
+
+  .btn--success:hover {
+    animation: none;
+    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(40, 167, 69, 0.4);
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn--large {
+    font-size: 20px;
+    padding: 1.5em 3em;
+  }
+
+  .cta-button-wrapper {
+    text-align: center;
+    margin: 3em auto;
+  }
+
+  // --- Timeline Section ---
+  .timeline-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .timeline-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .timeline-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .timeline-item.animate:nth-child(1) { transition-delay: 0.1s; }
+  .timeline-item.animate:nth-child(2) { transition-delay: 0.2s; }
+  .timeline-item.animate:nth-child(3) { transition-delay: 0.3s; }
+  .timeline-item.animate:nth-child(4) { transition-delay: 0.4s; }
+  .timeline-item.animate:nth-child(5) { transition-delay: 0.5s; }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-number {
+    flex: none;
+    margin-right: 10px;
+    position: relative;
+    min-width: 60px;
+  }
+
+  .timeline-number .number {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(29, 29, 31);
+    margin-bottom: 16px;
+  }
+
+  .connecting-line {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 4px;
+    height: calc(100% + 40px);
+    border-radius: 2px;
+  }
+
+  .timeline-content {
+    flex: 1;
+    padding-right: 32px;
+  }
+
+  .timeline-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    color: rgb(29, 29, 31);
+    margin-top: 0;
+    margin-bottom: 16px;
+    max-width: none;
+    text-align: left;
+  }
+
+  .timeline-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(110, 110, 115);
+    margin: 0;
+    max-width: none;
+  }
+
+  .timeline-image {
+    flex: none;
+    width: 180px;
+    height: 180px;
+  }
+
+  .image-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgb(236, 237, 241);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // --- Steps Section ---
+  .steps-container {
+    max-width: 900px;
+    margin: 3em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+  }
+
+  .step-block {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  .step-block.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .step-block.animate:nth-child(1) { transition-delay: 0.1s; }
+  .step-block.animate:nth-child(2) { transition-delay: 0.2s; }
+  .step-block.animate:nth-child(3) { transition-delay: 0.3s; }
+  .step-block.animate:nth-child(4) { transition-delay: 0.4s; }
+  .step-block.animate:nth-child(5) { transition-delay: 0.5s; }
+
+  .step-block:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  }
+
+  .step-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .step-icon:nth-child(1) { animation-delay: 0s; }
+  .step-icon:nth-child(2) { animation-delay: 0.5s; }
+  .step-icon:nth-child(3) { animation-delay: 1s; }
+  .step-icon:nth-child(4) { animation-delay: 1.5s; }
+  .step-icon:nth-child(5) { animation-delay: 2s; }
+
+  .step-content h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+  }
+
+  .step-content p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  // --- Multi-Column Footer ---
+  .custom-footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 950px; 
+    margin: 0 auto; 
+    padding: 3em 1em;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+  }
+  
+  .footer-left { 
+    flex: 1; 
+    text-align: left; 
+  }
+  
+  .footer-center { 
+    flex: 2; 
+    text-align: center; 
+  }
+  
+  .footer-right { 
+    flex: 1; 
+    text-align: right; 
+  }
+  
+  #my-logo { 
+    max-height: 100px; 
+    width: auto; 
+  }
+  
+  #brokerage-logo { 
+    max-height: 63px; 
+    width: auto; 
+  }
+  
+  .footer-links { 
+    margin-bottom: 1em; 
+  }
+  
+  .footer-links a { 
+    font-size: 14px; 
+  }
+  
+  .social-icons { 
+    margin-bottom: 1.5em; 
+  }
+  
+  .social-icons a { 
+    font-size: 20px; 
+  }
+  
+  .footer-copyright-text { 
+    font-size: 1em; 
+    opacity: 0.7; 
+    margin: 0; 
+  }
+
+  // --- Utilities ---
+  .header-link { display: none !important; }
+  .text-center { text-align: center; }
+
+  /*
+  ==========================================================================
+      RESPONSIVE STYLES
+  ==========================================================================
+  */
+  
+  // Tablet & Desktop
+  @media screen and (min-width: 768px) {
+    .steps-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .step-block:last-child:nth-child(odd) {
+      grid-column: span 2;
+      justify-self: center;
+      width: 100%;
+      max-width: calc(50% - 1em);
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+    }
+    
+    .page__content h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    
+    .page__content h3 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    
+    .page__content p, .page__content ul, .page__content ol {
+      font-size: 17px;
+    }
+    
+    .key-takeaway {
+      font-size: 19px;
+    }
+
+    .author-block {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.2em;
+    }
+    
+    .author-photo {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+    
+    .author-text {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    
+    .author-brokerage-logo {
+      margin: 1em auto 0;
+    }
+
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .timeline-number {
+      margin-right: 0;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .connecting-line {
+      display: none !important;
+    }
+    
+    .timeline-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .timeline-content h3 {
+      text-align: center;
+    }
+    
+    .timeline-image {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+    }
+    
+    .image-container {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
