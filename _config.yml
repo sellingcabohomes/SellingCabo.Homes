@@ -19,20 +19,20 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "SellingCabo.Homes | Sebastian Dee"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+subtitle                 : "Your Expert Guide to Los Cabos Real Estate"
+name                     : "Sebastian Dee"
 description              : "Your expert guide to making intelligent real estate decisions in Los Cabos, Mexico."
 url                      : "https://sellingcabo.homes"
-baseurl                  : # ""
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+baseurl                  : ""
+repository               : "sellingcabohomes/SellingCabo.Homes"
+teaser                   : "/assets/Images/cabo_beach.png"
+logo                     : "/assets/Images/Logo_Ronival_Blue_sin_BG.png"
+masthead_title           : "SellingCabo.Homes"
+breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+copyright                : "Sebastian Dee"
+copyright_url            : "https://sellingcabo.homes"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -89,83 +89,79 @@ yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
+instagram:
+  username               : "sebastiandeehomes"
 facebook:
-  username               :
+  username               : "sebastiandeehomes"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/Images/cabo_beach.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Sebastian Dee"
+  links: 
+    - "https://facebook.com/sebastiandeehomes"
+    - "https://instagram.com/sebastiandeehomes"
+    - "https://linkedin.com/in/sebastiandeehomes"
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-RXQGE2R4V8"
+    anonymize_ip         : false
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Sebastian Dee"
+  avatar           : "/assets/Images/sebastian-dee.png"
+  bio              : "Los Cabos Real Estate Specialist helping serious buyers make intelligent property decisions in Mexico."
+  location         : "Los Cabos, Mexico"
+  email            : "sdelapena@ronival.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://sellingcabo.homes"
+    - label: "Property Search"
+      icon: "fas fa-fw fa-search"
+      url: "https://sebastian.findmexicohouses.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://facebook.com/sebastiandeehomes"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/sebastiandeehomes"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/sebastiandeehomes"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://facebook.com/sebastiandeehomes"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
-  since: "2013"
+      url: "https://instagram.com/sebastiandeehomes"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/sebastiandeehomes"
+    - label: "Property Search"
+      icon: "fas fa-fw fa-search"
+      url: "https://sebastian.findmexicohouses.com"
+
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - llms.txt
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -229,7 +225,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Mazatlan
 
 
 # Pagination with jekyll-paginate
@@ -265,6 +261,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -273,6 +271,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-redirect-from
 
 
 # Archives
@@ -287,10 +287,10 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /blog/categories/
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /blog/tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -311,17 +311,44 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
 
 # Defaults
 defaults:
-  # _posts
+  # Homepage
   - scope:
       path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # Blog posts
+  - scope:
+      path: "blog/_posts"
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: false
       share: true
       related: true
+      show_date: true
+  # Blog pages
+  - scope:
+      path: "blog"
+    values:
+      layout: home
+      author_profile: true
+
+# Site search
+search: true
+search_full_content: true
+search_provider: lunr
+
+# Feed settings
+feed:
+  path: blog/feed.xml
