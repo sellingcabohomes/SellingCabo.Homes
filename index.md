@@ -14,13 +14,13 @@ title: A Smarter Way to Buy Los Cabos Real Estate
 
 
 <div class="author-block">
-  <img src="/assets/images/sebastian-dee.png" alt="Sebastian Dee Headshot" class="author-photo">
+  <img src="/assets/Images/sebastian-dee.png" alt="Sebastian Dee Headshot" class="author-photo">
   <div class="author-text">
     From the desk of Sebastian Dee.<br>
     Los Cabos Real Estate Specialist<br>
     Baja Sur, Mx. 2025.
   </div>
-  <img src="/assets/images/Logo_Ronival_Blue_sin_BG.png" alt="Brokerage Name Logo" class="author-brokerage-logo">
+  <img src="/assets/Images/Logo_Ronival_Blue_sin_BG.png" alt="Brokerage Name Logo" class="author-brokerage-logo">
 </div>
 
 <div class="section-white" markdown="1">
@@ -77,7 +77,7 @@ Here's what I mean...
       </div>
       <div class="timeline-image">
         <div class="image-container">
-          <img src="/assets/images/Q1.png" alt="A compass representing a clear lifestyle vision for Los Cabos" />
+          <img src="/assets/Images/Q1.png" alt="A compass representing a clear lifestyle vision for Los Cabos" />
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ Here's what I mean...
       </div>
       <div class="timeline-image">
         <div class="image-container">
-          <img src="/assets/images/Q2.jpg" alt="Geometric blocks forming a house to represent a complete investment budget" />
+          <img src="/assets/Images/Q2.jpg" alt="Geometric blocks forming a house to represent a complete investment budget" />
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ Here's what I mean...
       </div>
       <div class="timeline-image">
         <div class="image-container">
-          <img src="/assets/images/Q3.png" alt="A stylized map of Los Cabos matching locations to goals" />
+          <img src="/assets/Images/Q3.png" alt="A stylized map of Los Cabos matching locations to goals" />
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ Here's what I mean...
       </div>
       <div class="timeline-image">
         <div class="image-container">
-          <img src="/assets/images/Q4.jpeg" alt="A balance scale weighing the purpose of the property: personal vs. investment" />
+          <img src="/assets/Images/Q4.jpeg" alt="A balance scale weighing the purpose of the property: personal vs. investment" />
         </div>
       </div>
     </div>
@@ -145,7 +145,7 @@ Here's what I mean...
       </div>
       <div class="timeline-image">
         <div class="image-container">
-          <img src="/assets/images/Q5.jpeg" alt="A key unlocking a door, symbolizing readiness to move forward" />
+          <img src="/assets/Images/Q5.jpeg" alt="A key unlocking a door, symbolizing readiness to move forward" />
         </div>
       </div>
     </div>
