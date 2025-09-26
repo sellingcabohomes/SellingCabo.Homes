@@ -1,8 +1,13 @@
 ---
 layout: home
-title: "Los Cabos Real Estate Made Simple (and Honest)"
-list_title: "Latest Analysis & Guides"
+title: "Thinking of Buying in Cabo? Start Here"
+list_title: "Buying in Cabo isn't like buying back home. Get the facts before you dive in."
 permalink: /blog/
+header:
+  overlay_color: "#ffffff"
+  actions:
+    - label: "Start Here"
+      url: "/blog/categories/"
 ---
 
 ## Stop Guessing. Start Understanding the Cabo Market.

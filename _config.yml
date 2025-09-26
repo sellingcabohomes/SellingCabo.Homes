@@ -352,3 +352,11 @@ search_provider: lunr
 # Feed settings
 feed:
   path: blog/feed.xml
+
+# Header configuration for blog
+logo: "/assets/Images/sellingcabo.homes_black.png"
+masthead_title: ""
+subtitle: ""
+
+# Enable search and navigation
+search: true
