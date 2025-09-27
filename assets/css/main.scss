@@ -850,6 +850,7 @@ $header-font-family: $sans-serif;
 
 .masthead .site-logo img {
   height: 80px !important;  // Bigger logo for both screens
+  max-height: 80px !important;
   width: auto !important;
 }
 
@@ -860,6 +861,7 @@ $header-font-family: $sans-serif;
   }
   
   .masthead .site-logo img {
-    height: 75px !important;  // Slightly smaller on mobile but still bigger than current
+    height: 75px !important;
+    max-height: 75px !important; 
   }
 }
