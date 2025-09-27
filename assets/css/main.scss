@@ -843,21 +843,24 @@ $header-font-family: $sans-serif;
 ==========================================================================
 */
 
-// Adjust sidebar width to give more space to content
+// Target the exact elements the theme uses
 @media (min-width: 64em) {
-  .sidebar {
-    width: 200px !important; // Narrower sidebar (was ~300px)
-  }
   
-  // More space for content on single posts
+  // For single blog posts - more specific selector
   .layout--single .page {
-    width: calc(100% - 220px) !important; // Content takes remaining space
-    padding-right: 220px !important;
+    width: calc(100% - 180px) !important;
+    padding-inline-end: 180px !important;
+    max-width: none !important;
   }
   
-  // More space for content on blog home page
-  .layout--home #main {
-    width: calc(100% - 220px) !important;
-    padding-right: 220px !important;
+  // For blog homepage - target the main content area
+  .layout--home .page__inner-wrap {
+    max-width: 1000px !important; // Increase from default 950px
+  }
+  
+  // Also target the sidebar to make it narrower
+  .layout--single .sidebar,
+  .layout--home .sidebar {
+    width: 180px !important; // Narrower sidebar
   }
 }
