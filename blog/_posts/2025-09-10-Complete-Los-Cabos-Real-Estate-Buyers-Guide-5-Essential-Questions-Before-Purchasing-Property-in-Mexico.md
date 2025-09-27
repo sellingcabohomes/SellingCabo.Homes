@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Complete Los Cabos Real Estate Buyer's Guide: 5 Essential Questions Before Purchasing Property in Mexico"
 author: "Sebastian Dee | SellingCabo.Homes"
 description: "Your essential buyer's guide for Los Cabos real estate. Learn the 5 questions that foreign buyers, including Americans & Canadians, must answer before purchasing property in Mexico to avoid costly mistakes and find the perfect investment."

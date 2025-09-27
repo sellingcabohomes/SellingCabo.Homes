@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "The Vacation Home Secret: How to Travel More for Less"
 author: "Sebastian Dee | SellingCabo.Homes"
 description: "Discover fractional ownership in Los Cabos. Own a deeded share of a luxury property for a fraction of the cost, without the hassles. Get the 2025 expert guide."

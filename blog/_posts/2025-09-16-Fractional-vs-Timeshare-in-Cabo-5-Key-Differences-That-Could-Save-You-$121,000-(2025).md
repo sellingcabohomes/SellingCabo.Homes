@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: single
 
 title: "Fractional Ownership vs Timeshare in Los Cabos: 5 Key Differences That Could Save You $121,000 (2025)"
 
