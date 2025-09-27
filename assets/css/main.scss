@@ -842,6 +842,6 @@ $header-font-family: $sans-serif;
 ==========================================================================
 */
 
-.layout--single .page__inner-wrap {
-  max-width: 950px !important; /* The old theme was likely around this width. Adjust as you see fit. */
+div#main .page__inner-wrap {
+  max-width: 950px !important;
 }
