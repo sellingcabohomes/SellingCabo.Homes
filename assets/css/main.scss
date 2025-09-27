@@ -838,10 +838,14 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG POST & PAGE FORMATTING
+    BLOG POST & PAGE FORMATTING (WIDER, BUT NOT FULL-WIDTH)
 ==========================================================================
 */
 
-.layout--single .page__content {
-  max-width: 950px !important;
+@media (min-width: 64em) {
+  .layout--single article.page {
+    max-width: 1200px !important;  /* Adjust this value up or down to find the perfect width */
+    float: none !important;
+    margin: 0 auto !important; /* This centers the content block on the page */
+  }
 }
