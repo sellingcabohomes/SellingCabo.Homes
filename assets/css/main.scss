@@ -838,18 +838,21 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG POST & PAGE FORMATTING (CENTERING FIX)
+    BLOG POST & PAGE FORMATTING (ADJUST COLUMN WIDTHS)
 ==========================================================================
 */
 
-/* 1. Turn the parent container into a flexbox container */
-div#main {
-  display: flex !important;
-  justify-content: center !important; /* This is the flexbox command to center content horizontally */
-}
+@media (min-width: 64em) {
+  /* Make the main content column wider */
+  .layout--single article.page {
+    width: 75% !important; /* Give it 75% of the space */
+    padding-right: 3em !important;
+    float: left !important;
+  }
 
-/* 2. Define the width of our content inside that container */
-.layout--single article.page {
-  width: 100% !important;
-  max-width: 1100px !important; /* Adjust this to your preferred width */
+  /* Make the related posts sidebar narrower */
+  .page__related {
+    width: 25% !important; /* Give it the remaining 25% */
+    float: right !important;
+  }
 }
