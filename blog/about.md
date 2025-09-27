@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About Sebastian Dee | Los Cabos Real Estate Agent"
-permalink: blog/about/
+permalink: /blog/about/
 description: "Meet Sebastian Dee, a licensed Los Cabos real estate agent with Ronival. Learn about his unique 'education-first' approach to buying property in Cabo and why his story makes him the right agent for serious buyers."
 ---
 

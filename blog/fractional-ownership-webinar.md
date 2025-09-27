@@ -2,7 +2,7 @@
 layout: default
 title: "Exclusive Webinar: The Smarter Way to Own a Luxury Vacation Home in Cabo"
 description: "Watch our on-demand webinar to discover how fractional ownership works and why it's the secret to enjoying a luxury lifestyle for less, without the headaches."
-permalink: /fractional-ownership-webinar/
+permalink: /blog/fractional-ownership-webinar/
 ---
 
 <style>

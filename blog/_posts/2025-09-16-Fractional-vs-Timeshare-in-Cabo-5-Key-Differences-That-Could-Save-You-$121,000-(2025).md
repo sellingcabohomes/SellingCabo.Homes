@@ -8,7 +8,7 @@ author: "Sebastian Dee | SellingCabo.Homes"
 
 description: "Discover the critical differences between fractional ownership and timeshares in Los Cabos. Learn which is a real asset and which is a depreciating expense."
 
-permalink: /fractional-ownership-vs-timeshare/
+permalink: /blog/fractional-ownership-vs-timeshare/
 
 seo:
 
