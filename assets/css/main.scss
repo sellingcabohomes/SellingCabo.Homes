@@ -838,23 +838,18 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG POST & PAGE FORMATTING (FINAL FIX)
+    BLOG POST & PAGE FORMATTING (CENTERING FIX)
 ==========================================================================
 */
 
-@media (min-width: 64em) {
-  .layout--single article.page {
-    /* 1. Override the theme's float and width */
-    float: none !important;
-    width: 100% !important;
+/* 1. Turn the parent container into a flexbox container */
+div#main {
+  display: flex !important;
+  justify-content: center !important; /* This is the flexbox command to center content horizontally */
+}
 
-    /* 2. Set our desired readable width */
-    max-width: 1100px !important; /* Adjust this value to get the perfect width */
-
-    /* 3. Force the container to be centered */
-    margin: 0 auto !important;
-
-    /* 4. Fix the container collapse (height: 0px) issue */
-    overflow: auto !important;
-  }
+/* 2. Define the width of our content inside that container */
+.layout--single article.page {
+  width: 100% !important;
+  max-width: 1100px !important; /* Adjust this to your preferred width */
 }
