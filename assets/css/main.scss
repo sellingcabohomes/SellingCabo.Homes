@@ -844,8 +844,10 @@ $header-font-family: $sans-serif;
 */
 
 @media (min-width: 64em) {
-  .layout--single article.page {
-    width: calc(100% - 150px) !important;
-    padding-right: 150px !important;
+  /* Apply this rule to both single posts AND the blog homepage */
+  .layout--single article.page,
+  .layout--home div#main {
+    width: calc(100% - 170px) !important;
+    padding-right: 170px !important;
   }
 }
