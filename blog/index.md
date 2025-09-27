@@ -9,6 +9,9 @@ header:
   actions:
     - label: "Start Here"
       url: "/blog/categories/"
+  header:
+     overlay_image: /assets/Images/cabo_beach.png
+     overlay_filter: 0.3
 ---
 
 ## Stop Guessing. Start Understanding the Cabo Market.

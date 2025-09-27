@@ -8,5 +8,7 @@ main:
     url: /blog/about/
   - title: "Properties"
     url: https://sebastian.findmexicohouses.com
+    target: "_blank"
   - title: "Calculator"
     url: https://calculator.sellingcabo.homes
+    target: "_blank"
