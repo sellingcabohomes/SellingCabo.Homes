@@ -843,16 +843,21 @@ $header-font-family: $sans-serif;
 ==========================================================================
 */
 
+// Adjust sidebar width to give more space to content
 @media (min-width: 64em) {
-  /* Rule for single posts */
-  .layout--single article.page {
-    width: calc(100% - 180px) !important;
-    padding-right: 180px !important;
+  .sidebar {
+    width: 200px !important; // Narrower sidebar (was ~300px)
   }
-
-  /* Rule for the blog homepage */
-  .layout--home div#main {
-    width: calc(100% - 180px) !important;
-    padding-right: 180px !important;
+  
+  // More space for content on single posts
+  .layout--single .page {
+    width: calc(100% - 220px) !important; // Content takes remaining space
+    padding-right: 220px !important;
+  }
+  
+  // More space for content on blog home page
+  .layout--home #main {
+    width: calc(100% - 220px) !important;
+    padding-right: 220px !important;
   }
 }
