@@ -846,13 +846,13 @@ $header-font-family: $sans-serif;
 @media (min-width: 64em) {
   /* Rule for single posts */
   .layout--single article.page {
-    width: calc(100% - 150px) !important;
-    padding-right: 150px !important;
+    width: calc(100% - 180px) !important;
+    padding-right: 180px !important;
   }
 
   /* Rule for the blog homepage */
   .layout--home div#main {
-    width: calc(100% - 150px) !important;
-    padding-right: 150px !important;
+    width: calc(100% - 180px) !important;
+    padding-right: 180px !important;
   }
 }
