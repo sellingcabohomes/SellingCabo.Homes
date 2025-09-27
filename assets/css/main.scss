@@ -792,26 +792,46 @@ $header-font-family: $sans-serif;
   visibility: hidden !important;
 }
 
-// Force hide any text next to logo
-.masthead__inner-wrap .site-title {
-  display: none !important;
-}
-
-// Logo styling - bigger and more padding
+// Logo styling
 .masthead .site-logo {
-  margin-right: 50px !important;
+  margin-right: 40px !important;
+  margin-left: 20px !important;
   
   img {
     height: 90px !important;
     width: auto !important;
     max-height: 90px !important;
+    max-width: none !important;
   }
 }
 
-// Clean up header layout
-.masthead__menu {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
+// Override the theme's responsive breakpoints - force menu to stay visible
+.greedy-nav {
+  .visible-links {
+    display: flex !important;
+  }
+  
+  .hidden-links {
+    display: none !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: none !important;
+  }
+}
+
+// Override media queries that hide the menu
+@media (max-width: 80em) {
+  .greedy-nav .visible-links {
+    display: flex !important;
+  }
+  
+  .greedy-nav__toggle {
+    display: none !important;
+  }
+}
+
+// Header spacing
+.masthead__inner-wrap {
+  padding: 1em 2em !important;
 }

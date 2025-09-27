@@ -28,7 +28,7 @@ repository               : "sellingcabohomes/SellingCabo.Homes"
 teaser                   : "/assets/Images/cabo_beach.png"
 logo                     : "/assets/Images/Logo_Ronival_Blue_sin_BG.png"
 masthead_title           : "SellingCabo.Homes"
-breadcrumbs              : true
+breadcrumbs              : false
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                : "Sebastian Dee"
