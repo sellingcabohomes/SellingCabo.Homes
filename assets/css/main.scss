@@ -699,6 +699,36 @@ $header-font-family: $sans-serif;
       font-size: 2.5rem !important;
       line-height: 1.2 !important;
     }
+
+/* --- Mobile Homepage Adjustments --- */
+
+/* 1. Add side padding to main content sections */
+.layout--sales-letter .page__content {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* 2. Add horizontal bars under the timeline numbers */
+.timeline-number .number::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 2px;
+  margin: 0.75em auto 0;
+}
+
+/* 3. Fix the white space on the hero image */
+.hero-section {
+  width: 100%; /* This prevents overflow from the scrollbar */
+}
+
+/* 4. Add side padding to the CTA button's container */
+.cta-button-wrapper {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
     
     .page__content h2 {
       font-size: 32px;
