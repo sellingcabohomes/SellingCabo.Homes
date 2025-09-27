@@ -695,11 +695,7 @@ $header-font-family: $sans-serif;
 
   // Mobile
   @media screen and (max-width: 767px) {
-    .hero-section h1 {
-      font-size: 2.5rem !important;
-      line-height: 1.2 !important;
-    }
-
+   
 /* --- Mobile Homepage Adjustments --- */
 
 /* 1. Add side padding to main content sections */
@@ -729,6 +725,11 @@ $header-font-family: $sans-serif;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
+
+ .hero-section h1 {
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+    }
     
     .page__content h2 {
       font-size: 32px;
@@ -742,6 +743,8 @@ $header-font-family: $sans-serif;
     
     .page__content p, .page__content ul, .page__content ol {
       font-size: 17px;
+      padding-left: 1.5em;   /* Added padding */
+      padding-right: 1.5em;  /* Added padding */
     }
     
     .key-takeaway {
