@@ -782,65 +782,65 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG HEADER CUSTOMIZATION
+    BLOG HEADER CUSTOMIZATION (FINAL ATTEMPT)
 ==========================================================================
 */
 
-// --- General Styles ---
-
-// Hide site title text on all screens
+/* --- Styles for ALL screens --- */
 .masthead .site-title {
-  display: none !important;
-  visibility: hidden !important;
+  display: none !important; /* Hide site title text */
 }
-
-// Adjust header container padding
 .masthead__inner-wrap {
-  padding: 0.5em 0.75em !important;
+  padding: 0.5em 1em !important; /* General padding */
 }
 
 
-// --- Desktop Styles (for screens 80em and wider) ---
+/* --- DESKTOP Styles (80em and wider) --- */
 @media (min-width: 80em) {
-  // Desktop logo position
   .masthead .site-logo {
-    margin-right: 40px !important;
     margin-left: 20px !important;
+    margin-right: 40px !important;
   }
-
-  // Desktop logo size
   .masthead .site-logo img {
     height: 90px !important;
   }
-
-  // Show full menu and hide hamburger on desktop
   .greedy-nav .visible-links {
-    display: flex !important;
+    display: flex !important; /* Show full menu */
   }
   .greedy-nav__toggle {
-    display: none !important;
+    display: none !important; /* Hide hamburger */
   }
 }
 
 
-// --- Mobile & Tablet Styles (for screens smaller than 80em) ---
+/* --- MOBILE & TABLET Styles (smaller than 80em) --- */
 @media (max-width: 79.99em) {
-  // Move logo closer to the left edge on mobile
+  /* Force the header items to align with space between them */
+  .greedy-nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  /* Style the logo */
   .masthead .site-logo {
     margin-left: 10px !important;
   }
-
-  // Set the mobile logo size (you can adjust this value)
   .masthead .site-logo img {
-    height: 80px !important;
+    height: 70px !important; /* A compromise on logo size */
   }
 
-  // Force all links into the hamburger menu on mobile
+  /* HIDE the text links... */
   .greedy-nav .visible-links {
     display: none !important;
   }
+  /* ...and FORCE the hamburger button to be visible */
+  .greedy-nav__toggle {
+    display: block !important;
+  }
 }
-/*
+
 ==========================================================================
     BLOG POST & PAGE FORMATTING
 ==========================================================================
