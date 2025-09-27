@@ -847,7 +847,7 @@ $header-font-family: $sans-serif;
   /* Apply this rule to both single posts AND the blog homepage */
   .layout--single article.page,
   .layout--home div#main {
-    width: calc(100% - 170px) !important;
-    padding-right: 170px !important;
+    width: calc(100% - 200px) !important;
+    padding-right: 200px !important;
   }
 }
