@@ -786,59 +786,55 @@ $header-font-family: $sans-serif;
 ==========================================================================
 */
 
-// Force hide site title text
+// --- General Styles ---
+
+// Hide site title text on all screens
 .masthead .site-title {
   display: none !important;
   visibility: hidden !important;
 }
 
-// Logo styling
-.masthead .site-logo {
-  margin-right: 40px !important;
-  margin-left: 20px !important;
-
-  img {
-    height: 90px !important;
-    width: auto !important;
-    max-height: 90px !important;
-    max-width: none !important;
-  }
+// Adjust header container padding
+.masthead__inner-wrap {
+  padding: 0.5em 0.75em !important;
 }
 
-/* For DESKTOP screens (wider than 80em) */
+
+// --- Desktop Styles (for screens 80em and wider) ---
 @media (min-width: 80em) {
-  /* Force the full navigation links to show */
+  // Desktop logo position
+  .masthead .site-logo {
+    margin-right: 40px !important;
+    margin-left: 20px !important;
+  }
+
+  // Desktop logo size
+  .masthead .site-logo img {
+    height: 90px !important;
+  }
+
+  // Show full menu and hide hamburger on desktop
   .greedy-nav .visible-links {
     display: flex !important;
   }
-
-  /* Hide the mobile hamburger button ONLY on desktop */
   .greedy-nav__toggle {
     display: none !important;
   }
 }
 
-// Header spacing
-.masthead__inner-wrap {
-  padding: 1em 2em !important;
-}
 
-// Override media queries that hide the menu
-@media (max-width: 80em) {
-  .greedy-nav .visible-links {
-    display: flex !important;
+// --- Mobile & Tablet Styles (for screens smaller than 80em) ---
+@media (max-width: 79.99em) {
+  // Move logo closer to the left edge on mobile
+  .masthead .site-logo {
+    margin-left: 10px !important;
   }
-  
-  .greedy-nav__toggle {
-    display: none !important;
+
+  // Make the logo smaller, but not tiny, on mobile
+  .masthead .site-logo img {
+    height: 65px !important;
   }
 }
-
-// Header spacing
-.masthead__inner-wrap {
-  padding: 1em 2em !important;
-}
-
 
 /*
 ==========================================================================
