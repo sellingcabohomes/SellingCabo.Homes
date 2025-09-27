@@ -792,7 +792,7 @@ $header-font-family: $sans-serif;
   
   // For single blog posts - more specific selector
  .layout--single .page {
-  width: calc(100% - 245px) !important;  // Increase from 180px to 245px
+  width: calc(100% - 245px) !important;  // Decrease from 300px to 245px
   padding-inline-end: 245px !important; // Match the width calculation
   max-width: none !important;
 }
@@ -807,6 +807,13 @@ $header-font-family: $sans-serif;
   .layout--home .sidebar {
     width: 180px !important; // Narrower sidebar
   }
+
+/* Makes the related posts section ALIGN LEFT with the content above */
+.page__related {
+  width: calc(100% - 245px) !important;
+  padding-right: 245px !important;
+  margin: 2em 0 !important;
+}
 }
 
 
