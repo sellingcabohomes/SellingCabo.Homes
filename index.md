@@ -268,7 +268,7 @@ If you want to stop spinning your wheels and start making real progress, just bo
 
 <br>
 <div class="cta-button-wrapper">
-<a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" class="btn btn--success btn--large">GET MY PERSONALIZED ACQUISITION PLAN</a>
+<a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" class="btn btn--success btn--large">SCHEDULE YOUR ACQUISITION STRATEGY CALL</a>
 </div>
 {: .text-center }
 </div>
@@ -290,7 +290,7 @@ If you want to stop spinning your wheels and start making real progress, just bo
 
   <br>
   <div class="cta-button-wrapper">
-  <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" class="btn btn--success btn--large">GET MY PERSONALIZED ACQUISITION PLAN</a>
+  <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" class="btn btn--success btn--large">SCHEDULE YOUR ACQUISITION STRATEGY CALL</a>
   </div>
   {: .text-center }
 </div>
