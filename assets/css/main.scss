@@ -830,3 +830,36 @@ $header-font-family: $sans-serif;
     font-size: 20px !important;
   }
 }
+
+/*
+==========================================================================
+    BLOG HEADER CUSTOMIZATION
+==========================================================================
+*/
+
+// Hide the site title text
+.masthead .site-title {
+  display: none !important;
+}
+
+// Make logo bigger and add padding for both desktop and mobile
+.masthead .site-logo {
+  margin-left: 25px !important;  // Move away from left edge
+  margin-right: 20px !important;
+}
+
+.masthead .site-logo img {
+  height: 75px !important;  // Bigger logo for both screens
+  width: auto !important;
+}
+
+// Adjust padding for mobile if needed
+@media (max-width: 63.99em) {
+  .masthead .site-logo {
+    margin-left: 15px !important;
+  }
+  
+  .masthead .site-logo img {
+    height: 65px !important;  // Slightly smaller on mobile but still bigger than current
+  }
+}
