@@ -836,23 +836,3 @@ $header-font-family: $sans-serif;
   padding: 1em 2em !important;
 }
 
-/*
-==========================================================================
-    BLOG POST & PAGE FORMATTING (ADJUST COLUMN WIDTHS)
-==========================================================================
-*/
-
-@media (min-width: 64em) {
-  /* Make the main content column wider */
-  .layout--single article.page {
-    width: 75% !important; /* Give it 75% of the space */
-    padding-right: 3em !important;
-    float: left !important;
-  }
-
-  /* Make the related posts sidebar narrower */
-  .page__related {
-    width: 25% !important; /* Give it the remaining 25% */
-    float: right !important;
-  }
-}
