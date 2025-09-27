@@ -848,8 +848,8 @@ $header-font-family: $sans-serif;
   
   // For single blog posts - more specific selector
  .layout--single .page {
-  width: calc(100% - 220px) !important;  // Increase from 180px to 220px
-  padding-inline-end: 220px !important; // Match the width calculation
+  width: calc(100% - 250px) !important;  // Increase from 180px to 220px
+  padding-inline-end: 250px !important; // Match the width calculation
   max-width: none !important;
 }
   
