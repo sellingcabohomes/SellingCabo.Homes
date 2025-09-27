@@ -5,13 +5,11 @@ list_title: "Buying in Cabo isn't like buying back home. Get the facts before yo
 permalink: /blog/
 breadcrumb: false
 header:
-  overlay_color: "#ffffff"
+  overlay_image: /assets/Images/cabo_beach.png
+  overlay_filter: 0.3
   actions:
     - label: "Start Here"
       url: "/blog/categories/"
-  header:
-     overlay_image: /assets/Images/cabo_beach.png
-     overlay_filter: 0.3
 ---
 
 ## Stop Guessing. Start Understanding the Cabo Market.
