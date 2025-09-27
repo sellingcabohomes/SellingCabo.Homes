@@ -872,3 +872,14 @@ $header-font-family: $sans-serif;
     max-height: 75px !important; 
   }
 }
+
+/*
+==========================================================================
+    MOBILE-SPECIFIC FIXES
+==========================================================================
+*/
+
+/* Hide the "Follow" button that appears on mobile post layouts */
+.author__urls .btn--follow {
+  display: none !important;
+}
