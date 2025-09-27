@@ -176,7 +176,7 @@ You also stop feeling like a tourist who might get taken advantage of, and start
 But here's the thing - **Answering these questions properly isn't something you can do in your head while scrolling through listings.** It takes a real conversation with someone who understands both the market and how to help you think through the implications of each answer.
 
 <div class="section-gray" markdown="1">
-## The Complete System:<br> How This Actually Works
+<h2>The Complete System:<br> How This Actually Works<h2>
 {: .text-center }
 
 Those five questions are just the foundation. What successful Cabo buyers really do is follow a complete system that I call **The Cabo Clarity Blueprint.** It's got five steps, and each one builds on the last.

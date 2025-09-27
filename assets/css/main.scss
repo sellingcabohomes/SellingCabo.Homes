@@ -698,12 +698,6 @@ $header-font-family: $sans-serif;
    
 /* --- Mobile Homepage Adjustments --- */
 
-/* 1. Add side padding to main content sections */
-.layout--sales-letter .page__content {
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
-}
-
 /* 2. Add horizontal bars under the timeline numbers */
 .timeline-number .number::after {
   content: '';
@@ -747,7 +741,7 @@ $header-font-family: $sans-serif;
     
     .page__content p, .page__content ul, .page__content ol {
       font-size: 17px;
-      padding-left: 1.3em;   /* Added padding */
+      padding-left: 1em;   /* Added padding */
       padding-right: 1em;  /* Added padding */
     }
     
