@@ -873,16 +873,16 @@ $header-font-family: $sans-serif;
 */
 
 /* --- Mobile Font Size (for screens smaller than 768px) --- */
-/* Targets paragraphs on single posts AND excerpts on the blog homepage */
+/* Targets paragraphs on single posts AND text on the blog homepage */
 .layout--single .page__content p,
-.layout--home .archive__item-excerpt p {
-  font-size: 20px !important;
+.layout--home .archive p {
+  font-size: 18px !important;
 }
 
 /* --- Desktop Font Size (for screens 768px and wider) --- */
 @media screen and (min-width: 768px) {
   .layout--single .page__content p,
-  .layout--home .archive__item-excerpt p {
+  .layout--home .archive p {
     font-size: 20px !important;
   }
 }
