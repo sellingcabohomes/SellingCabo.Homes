@@ -782,79 +782,53 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG HEADER CUSTOMIZATION (FINAL ATTEMPT)
+    BLOG HEADER CUSTOMIZATION
 ==========================================================================
 */
 
-/* --- Styles for ALL screens --- */
+// Hide site title text everywhere
 .masthead .site-title {
-  display: none !important; /* Hide site title text */
-}
-.masthead__inner-wrap {
-  padding: 0.5em 1em !important; /* General padding */
+  display: none !important;
 }
 
-
-/* --- DESKTOP Styles (80em and wider) --- */
+// Desktop styles - 64em and up
 @media (min-width: 64em) {
+  .masthead .site-logo img {
+    height: 90px !important;
+    width: auto !important;
+  }
+  
   .masthead .site-logo {
     margin-left: 20px !important;
     margin-right: 40px !important;
   }
-  .masthead .site-logo img {
-    height: 90px !important;
-  }
+  
+  // Force desktop menu to stay visible
   .greedy-nav .visible-links {
-    display: flex !important; /* Show full menu */
+    display: flex !important;
   }
+  
   .greedy-nav__toggle {
-    display: none !important; /* Hide hamburger */
+    display: none !important;
   }
 }
 
-
-/* --- MOBILE & TABLET Styles (smaller than 64em) --- */
+// Mobile/tablet styles - below 64em
 @media (max-width: 63.99em) {
-  .greedy-nav {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  
-  /* Bigger mobile logo */
-  .masthead .site-logo {
-    margin-left: 10px !important;
-    flex-shrink: 0 !important; /* Prevent logo from shrinking */
-  }
-  
   .masthead .site-logo img {
-    height: 60px !important; /* Reasonable mobile size */
+    height: 50px !important;
     width: auto !important;
   }
   
-  /* Hide desktop navigation */
-  .greedy-nav .visible-links {
-    display: none !important;
+  .masthead .site-logo {
+    margin-left: 10px !important;
+    margin-right: 15px !important;
   }
   
-  /* Show and style hamburger menu */
+  // Show hamburger menu
   .greedy-nav__toggle {
     display: block !important;
-    background: transparent !important;
-    border: none !important;
-    padding: 0.5rem !important;
     margin-right: 10px !important;
-  }
-  
-  /* Ensure hamburger icon is visible */
-  .greedy-nav__toggle .navicon {
-    background: #333 !important;
-  }
-  
-  .greedy-nav__toggle .navicon::before,
-  .greedy-nav__toggle .navicon::after {
-    background: #333 !important;
   }
 }
 
