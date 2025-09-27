@@ -796,7 +796,7 @@ $header-font-family: $sans-serif;
 
 
 /* --- DESKTOP Styles (80em and wider) --- */
-@media (min-width: 80em) {
+@media (min-width: 64em) {
   .masthead .site-logo {
     margin-left: 20px !important;
     margin-right: 40px !important;
@@ -813,31 +813,48 @@ $header-font-family: $sans-serif;
 }
 
 
-/* --- MOBILE & TABLET Styles (smaller than 80em) --- */
-@media (max-width: 79.99em) {
-  /* Force the header items to align with space between them */
+/* --- MOBILE & TABLET Styles (smaller than 64em) --- */
+@media (max-width: 63.99em) {
   .greedy-nav {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    width: 100%;
+    width: 100% !important;
   }
-
-  /* Style the logo */
+  
+  /* Bigger mobile logo */
   .masthead .site-logo {
     margin-left: 10px !important;
+    flex-shrink: 0 !important; /* Prevent logo from shrinking */
   }
+  
   .masthead .site-logo img {
-    height: 70px !important; /* A compromise on logo size */
+    height: 60px !important; /* Reasonable mobile size */
+    width: auto !important;
   }
-
-  /* HIDE the text links... */
+  
+  /* Hide desktop navigation */
   .greedy-nav .visible-links {
     display: none !important;
   }
-  /* ...and FORCE the hamburger button to be visible */
+  
+  /* Show and style hamburger menu */
   .greedy-nav__toggle {
     display: block !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0.5rem !important;
+    margin-right: 10px !important;
+  }
+  
+  /* Ensure hamburger icon is visible */
+  .greedy-nav__toggle .navicon {
+    background: #333 !important;
+  }
+  
+  .greedy-nav__toggle .navicon::before,
+  .greedy-nav__toggle .navicon::after {
+    background: #333 !important;
   }
 }
 
