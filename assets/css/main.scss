@@ -847,11 +847,11 @@ $header-font-family: $sans-serif;
 @media (min-width: 64em) {
   
   // For single blog posts - more specific selector
-  .layout--single .page {
-    width: calc(100% - 180px) !important;
-    padding-inline-end: 180px !important;
-    max-width: none !important;
-  }
+ .layout--single .page {
+  width: calc(100% - 220px) !important;  // Increase from 180px to 220px
+  padding-inline-end: 220px !important; // Match the width calculation
+  max-width: none !important;
+}
   
   // For blog homepage - target the main content area
   .layout--home .page__inner-wrap {
