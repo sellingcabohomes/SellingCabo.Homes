@@ -781,30 +781,37 @@ $header-font-family: $sans-serif;
 }
 
 /*
-/*
 ==========================================================================
     BLOG HEADER CUSTOMIZATION
 ==========================================================================
 */
 
-// Hide site title text completely
-.site-title {
+// Force hide site title text
+.masthead .site-title {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Force hide any text next to logo
+.masthead__inner-wrap .site-title {
   display: none !important;
 }
 
 // Logo styling - bigger and more padding
-.site-logo {
-  margin-right: 40px; // More padding to the right
+.masthead .site-logo {
+  margin-right: 50px !important;
   
   img {
-    height: 80px !important; // Bigger logo
-    width: auto;
+    height: 90px !important;
+    width: auto !important;
+    max-height: 90px !important;
   }
 }
 
-// Ensure navigation stays on the right
-.greedy-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+// Clean up header layout
+.masthead__menu {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
 }

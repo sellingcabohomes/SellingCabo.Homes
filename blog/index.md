@@ -3,6 +3,7 @@ layout: home
 title: "Thinking of Buying in Cabo? Start Here"
 list_title: "Buying in Cabo isn't like buying back home. Get the facts before you dive in."
 permalink: /blog/
+breadcrumb: false
 header:
   overlay_color: "#ffffff"
   actions:
