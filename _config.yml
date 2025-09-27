@@ -127,7 +127,8 @@ author:
       url: "https://sellingcabo.homes"
     - label: "Property Search"
       icon: "fas fa-fw fa-search"
-      url: "https://sebastian.findmexicohouses.com"
+      url: "https://sebastian.findmexicohouses.com/results-gallery/?custom=114628%2C114629%2C114630%2C114633%2C114634%2C114635&userid=all
+    target: "_blank""
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/sebastiandeehomes"
