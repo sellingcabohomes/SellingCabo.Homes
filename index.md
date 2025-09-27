@@ -45,16 +45,28 @@ You think the problem is getting a good deal. It's not that either.
 
 Think about it. Back home, when you make a major business decision or investment, you have systems. You have trusted advisors. You have a process that gives you confidence.
 
-But here, you're clicking through pretty photos on websites that don't even tell you the HOA fees. You're getting bombarded by agents who want to show you 47 properties this weekend. You're trying to figure out what a "fideicomiso" is from Google searches at 11 PM.
+But here, you're clicking through pretty photos on websites that don't even tell you the HOA fees. You're getting bombarded by agents who want to show you 47 properties this weekend. 
 
-**No wonder you feel stuck...**
+**You're trying to figure out what a "fideicomiso" is from Google searches at 11 PM, wondering why something this critical to your financial future is so hard to get a straight answer about.**
+
+**You find yourself second-guessing every piece of advice because you've heard three different "experts" give you three different answers to the same question.** 
+
+You're reading horror stories online about buyers who thought they were making smart investments, only to discover hidden costs, legal complications, or properties that don't perform as promised.
+
+**For the first time in years, you're making a major financial decision while feeling like you don't have all the information you need to protect yourself.**
+
+No wonder you feel stuck...
 </div>
 <div class="section-blue" markdown="1">
 <div class="cabo-section-break cabo-beach">
   <h2>What Successful Cabo Buyers<br> Actually Do Differently</h2>
 </div>
 
-I've noticed something interesting about the buyers who actually pull the trigger and end up happy with their purchase.
+The buyers who break through this chaos and actually end up with properties they love don't have some secret insider knowledge.
+
+**They follow a completely different approach.**
+
+Instead of trying to navigate the confusion on their own, they start with a systematic process that eliminates the guesswork before they ever look at a single property.
 
 **They don't start by looking at properties.**
 
@@ -231,7 +243,7 @@ And you get to stop spending your valuable time and mental energy on research th
 
 Here's how this works practically.
 
-The commission for representing you gets paid by the seller at closing - that's just how real estate works. You're not writing me a check.
+The commission for representing you gets paid by the seller at closing - that's standard in Los Cabos real estate. You're not writing me a check.
 
 But **you are making a choice about where that commission goes.** You can direct it toward an agent who just opens doors and hopes you figure everything else out yourself. Or you can direct it toward someone who's going to implement this entire system with you.
 
