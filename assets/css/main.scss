@@ -796,7 +796,7 @@ $header-font-family: $sans-serif;
 .masthead .site-logo {
   margin-right: 40px !important;
   margin-left: 20px !important;
-  
+
   img {
     height: 90px !important;
     width: auto !important;
@@ -805,19 +805,22 @@ $header-font-family: $sans-serif;
   }
 }
 
-// Override the theme's responsive breakpoints - force menu to stay visible
-.greedy-nav {
-  .visible-links {
+/* For DESKTOP screens (wider than 80em) */
+@media (min-width: 80em) {
+  /* Force the full navigation links to show */
+  .greedy-nav .visible-links {
     display: flex !important;
   }
-  
-  .hidden-links {
-    display: none !important;
-  }
-  
+
+  /* Hide the mobile hamburger button ONLY on desktop */
   .greedy-nav__toggle {
     display: none !important;
   }
+}
+
+// Header spacing
+.masthead__inner-wrap {
+  padding: 1em 2em !important;
 }
 
 // Override media queries that hide the menu
@@ -848,7 +851,7 @@ $header-font-family: $sans-serif;
   
   // For single blog posts - more specific selector
  .layout--single .page {
-  width: calc(100% - 245px) !important;  // Increase from 180px to 220px
+  width: calc(100% - 245px) !important;  // Increase from 180px to 245px
   padding-inline-end: 245px !important; // Match the width calculation
   max-width: none !important;
 }
