@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Baja Sur Real Estate Market Report - August & YTD 2025 | Los Cabos"
+title: "Baja Sur Real Estate Market Report - August & YTD 2025 - Los Cabos"
 author: "Sebastian Dee | Selling Cabo Homes"
 description: "The complete August 2025 real estate market report for Baja Sur, including Los Cabos. Analyze active listings, sales, and prices for Cabo San Lucas, San Jose del Cabo, Todos Santos, East Cape and more."
 permalink: /blog/los-cabos-real-estate-market-report-august-2025/
