@@ -838,14 +838,23 @@ $header-font-family: $sans-serif;
 
 /*
 ==========================================================================
-    BLOG POST & PAGE FORMATTING (WIDER, BUT NOT FULL-WIDTH)
+    BLOG POST & PAGE FORMATTING (FINAL FIX)
 ==========================================================================
 */
 
 @media (min-width: 64em) {
   .layout--single article.page {
-    max-width: 1200px !important;  /* Adjust this value up or down to find the perfect width */
+    /* 1. Override the theme's float and width */
     float: none !important;
-    margin: 0 auto !important; /* This centers the content block on the page */
+    width: 100% !important;
+
+    /* 2. Set our desired readable width */
+    max-width: 1100px !important; /* Adjust this value to get the perfect width */
+
+    /* 3. Force the container to be centered */
+    margin: 0 auto !important;
+
+    /* 4. Fix the container collapse (height: 0px) issue */
+    overflow: auto !important;
   }
 }
