@@ -835,3 +835,15 @@ $header-font-family: $sans-serif;
 .masthead__inner-wrap {
   padding: 1em 2em !important;
 }
+
+/*
+==========================================================================
+    BLOG POST & PAGE FORMATTING
+==========================================================================
+*/
+
+.layout--single .page__content p,
+.layout--single .page__content ul,
+.layout--single .page__content ol {
+  max-width: 900px !important; /* Default is ~760px. Adjust this value as needed. */
+}
