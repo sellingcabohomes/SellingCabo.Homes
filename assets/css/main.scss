@@ -849,7 +849,7 @@ $header-font-family: $sans-serif;
 }
 
 .masthead .site-logo img {
-  height: 75px !important;  // Bigger logo for both screens
+  height: 80px !important;  // Bigger logo for both screens
   width: auto !important;
 }
 
@@ -860,6 +860,6 @@ $header-font-family: $sans-serif;
   }
   
   .masthead .site-logo img {
-    height: 65px !important;  // Slightly smaller on mobile but still bigger than current
+    height: 75px !important;  // Slightly smaller on mobile but still bigger than current
   }
 }
