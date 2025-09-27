@@ -848,8 +848,8 @@ $header-font-family: $sans-serif;
   
   // For single blog posts - more specific selector
  .layout--single .page {
-  width: calc(100% - 240px) !important;  // Increase from 180px to 220px
-  padding-inline-end: 240px !important; // Match the width calculation
+  width: calc(100% - 245px) !important;  // Increase from 180px to 220px
+  padding-inline-end: 245px !important; // Match the width calculation
   max-width: none !important;
 }
   
@@ -862,5 +862,24 @@ $header-font-family: $sans-serif;
   .layout--single .sidebar,
   .layout--home .sidebar {
     width: 180px !important; // Narrower sidebar
+  }
+}
+
+
+/*
+==========================================================================
+    BLOG FONT SIZING
+==========================================================================
+*/
+
+/* --- Mobile Font Size (for screens smaller than 768px) --- */
+.layout--single .page__content p {
+  font-size: 18px !important;
+}
+
+/* --- Desktop Font Size (for screens 768px and wider) --- */
+@media screen and (min-width: 768px) {
+  .layout--single .page__content p {
+    font-size: 20px !important;
   }
 }
