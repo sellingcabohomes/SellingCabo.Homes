@@ -780,57 +780,6 @@ $header-font-family: $sans-serif;
   }
 }
 
-/*
-==========================================================================
-    BLOG HEADER CUSTOMIZATION
-==========================================================================
-*/
-
-// Hide site title text everywhere
-.masthead .site-title {
-  display: none !important;
-}
-
-// Desktop styles - 64em and up
-@media (min-width: 64em) {
-  .masthead .site-logo img {
-    height: 90px !important;
-    width: auto !important;
-  }
-  
-  .masthead .site-logo {
-    margin-left: 20px !important;
-    margin-right: 40px !important;
-  }
-  
-  // Force desktop menu to stay visible
-  .greedy-nav .visible-links {
-    display: flex !important;
-  }
-  
-  .greedy-nav__toggle {
-    display: none !important;
-  }
-}
-
-// Mobile/tablet styles - below 64em
-@media (max-width: 63.99em) {
-  .masthead .site-logo img {
-    height: 50px !important;
-    width: auto !important;
-  }
-  
-  .masthead .site-logo {
-    margin-left: 10px !important;
-    margin-right: 15px !important;
-  }
-  
-  // Show hamburger menu
-  .greedy-nav__toggle {
-    display: block !important;
-    margin-right: 10px !important;
-  }
-}
 
 /*
 ==========================================================================
