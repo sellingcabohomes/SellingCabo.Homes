@@ -830,12 +830,16 @@ $header-font-family: $sans-serif;
     margin-left: 10px !important;
   }
 
-  // Make the logo smaller, but not tiny, on mobile
+  // Set the mobile logo size (you can adjust this value)
   .masthead .site-logo img {
-    height: 65px !important;
+    height: 80px !important;
+  }
+
+  // Force all links into the hamburger menu on mobile
+  .greedy-nav .visible-links {
+    display: none !important;
   }
 }
-
 /*
 ==========================================================================
     BLOG POST & PAGE FORMATTING
