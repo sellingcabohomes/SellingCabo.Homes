@@ -9,6 +9,8 @@ seo:
 image:
   path: /assets/los-cabos-beach.jpg
   alt: "A signed real estate contract with keys on a desk overlooking a beach in Los Cabos."
+header:
+  teaser: /assets/los-cabos-beach.jpg
 ---
 
 ## In This Article, You'll Learn:

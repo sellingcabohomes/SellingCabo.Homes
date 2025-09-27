@@ -9,6 +9,8 @@ seo:
 image:
   path: /assets/loscabosbuyersguide.jpg
   alt: "A focused couple reviewing their Los Cabos real estate plan, representing a successful property purchase."
+header:
+  teaser: /assets/loscabosbuyersguide.jpg
 ---
 
 *The step-by-step preparation process that helps foreign buyers, including Americans and Canadians, find their perfect Los Cabos investment property faster and avoid costly mistakes*

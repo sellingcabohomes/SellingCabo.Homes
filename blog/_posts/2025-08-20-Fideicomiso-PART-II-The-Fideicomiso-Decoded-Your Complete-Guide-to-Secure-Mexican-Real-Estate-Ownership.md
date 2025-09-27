@@ -9,6 +9,8 @@ seo:
 image:
   path: /assets/los-cabos-luxury-property.jpg
   alt: "A luxury home in Los Cabos with an infinity pool overlooking the ocean, representing a successful real estate investment through a fideicomiso."
+header:
+  teaser: /assets/los-cabos-luxury-property.jpg
 ---
 
 *How Mexico created a property system that's actually MORE secure than regular ownership (and why smart investors are flocking to Los Cabos)*

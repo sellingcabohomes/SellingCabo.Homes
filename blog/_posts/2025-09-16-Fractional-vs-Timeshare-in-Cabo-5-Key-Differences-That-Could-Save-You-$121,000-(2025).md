@@ -20,6 +20,9 @@ image:
 
   alt: "A split image showing a luxurious private fractional villa vs. a crowded timeshare resort pool in Cabo San Lucas."
 
+header:
+  teaser: /assets/fractional-ownership-vs-timeshare-cabo.jpeg
+
 ---
 
 

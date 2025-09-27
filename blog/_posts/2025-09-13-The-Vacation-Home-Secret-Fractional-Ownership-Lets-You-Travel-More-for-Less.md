@@ -9,6 +9,8 @@ seo:
 image:
   path: /assets/cabo-hero-sunrise.jpeg
   alt: "A stunning sunrise view of Land's End arch from a luxury vacation home in Los Cabos."
+header:
+  teaser: /assets/cabo-hero-sunrise.jpeg
 ---
 
 
