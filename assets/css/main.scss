@@ -836,3 +836,16 @@ $header-font-family: $sans-serif;
   padding: 1em 2em !important;
 }
 
+
+/*
+==========================================================================
+    BLOG POST & PAGE FORMATTING
+==========================================================================
+*/
+
+@media (min-width: 64em) {
+  .layout--single article.page {
+    width: calc(100% - 150px) !important;
+    padding-right: 150px !important;
+  }
+}
