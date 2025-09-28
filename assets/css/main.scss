@@ -799,8 +799,9 @@ $header-font-family: $sans-serif;
     }
     
     .timeline-content {
-      padding-left: 0.5em;  /* This adds side padding to the text, making it wider */
-      padding-right: 0.5em; /* This adds side padding to the text, making it wider */
+      width: 100%;         
+      padding-left: 1.5em;  
+      padding-right: 1.5em;
       margin-bottom: 20px;
       text-align: center;
     }
