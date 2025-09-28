@@ -1008,3 +1008,14 @@ $header-font-family: $sans-serif;
     text-align: center;
   }
 }
+
+/*
+==========================================================================
+    BLOG-SPECIFIC FIXES
+==========================================================================
+*/
+
+/* Hide the theme's default "Recent posts" heading on the blog homepage */
+.layout--home .archive__subtitle {
+  display: none !important;
+}

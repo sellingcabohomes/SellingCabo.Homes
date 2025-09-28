@@ -9,7 +9,7 @@ header:
   overlay_filter: 0.3
   actions:
     - label: "Browse Articles"
-      url: "#latest-articles"
+      url: "/blog/#recent-posts"
 ---
 
 ## Stop Guessing. Start Understanding the Cabo Market.
@@ -20,4 +20,6 @@ Here, you won't find sugar-coated sales pitches. You'll find data-driven **[mark
 
 I'm Sebastian Dee, and my entire approach is education-first. My goal is to give you the clarity you need to make an informed decision. 
 
-<h2 id="latest-articles">Browse the latest articles below to get started.</h2>
+Browse the latest articles below to get started.
+
+<h2 id="recent-posts">Recent posts</h2>
