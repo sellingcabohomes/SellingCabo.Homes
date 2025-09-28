@@ -7,7 +7,7 @@ description: "Meet Sebastian Dee, a licensed Los Cabos real estate agent with Ro
 ---
 
 ## About Sebastian De la Peña (Sebastian Dee) <br>
-Licensed Real Estate Agent | Los Cabos Residential Real Estate Specialist | <a href="http://sellingcabo.homes" target="_blank">SellingCabo.Homes</a>
+Licensed Real Estate Agent | Los Cabos Residential Real Estate Specialist | [SellingCabo.Homes](/)
 <img src="{{ "/assets/sebastian-dee.png" | relative_url }}" alt="Sebastian Dee - Los Cabos Real Estate Agent" style="width: 200px; float: left; margin-top: 20px; margin-right: 20px; border-radius: 50%;">
 
 
@@ -21,7 +21,7 @@ Here's why:
 
 **If you're hunting for unicorns, I'm not your guy.** You know what I mean - beachfront property for $300K, luxury estates at starter condo prices, or that "perfect deal" that doesn't exist in reality. I won't waste your time or mine chasing fantasies.
 
-**If you want to go house shopping without knowing what you actually want or can afford, you won't like me.** I have an education-first approach. That means we start by filtering through your own thoughts about what you really want versus what you think you want. Then we cover the legal framework, <a href="https://blog.sellingcabo.homes/2025/08/14/Los-Cabos-Closing-Costs-2025-The-Hidden-Costs-That-Could-Derail-Your-Dream-(And-How-to-Budget-Like-a-Pro).html" target="_blank">true costs</a>, <a href="https://blog.sellingcabo.homes/2025/08/20/Fideicomiso-PART-II-The-Fideicomiso-Decoded-Your-Complete-Guide-to-Secure-Mexican-Real-Estate-Ownership.html" target="_blank">fideicomiso trusts</a>, and what you REALLY need to know before we look at a single property.
+**If you want to go house shopping without knowing what you actually want or can afford, you won't like me.** I have an education-first approach. That means we start by filtering through your own thoughts about what you really want versus what you think you want. Then we cover the legal framework, [true costs](/blog/los-cabos-closing-costs/), [fideicomiso trusts](/blog/how-fideicomiso-works-mexico/), and what you REALLY need to know before we look at a single property.
 
 Most Cabo real estate agents will show you 20 houses hoping something sticks. I'd rather spend time understanding your actual needs and show you 3 perfect matches in the right Los Cabos neighborhoods. Some people find this process annoying. Those people work with other agents.
 
