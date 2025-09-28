@@ -936,10 +936,10 @@ $header-font-family: $sans-serif;
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 1.5em 1em; /* Reduced top and bottom padding */
   border-top: 1px solid #e5e7eb;
   display: flex;
-  flex-wrap: wrap; /* Allows columns to stack on mobile */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2em;
@@ -947,13 +947,13 @@ $header-font-family: $sans-serif;
 
 .footer-column {
   flex: 1;
-  min-width: 300px; /* Prevents columns from getting too squished */
+  min-width: 300px;
 }
 
 .footer-left .nav-ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1em 0; /* Reduced space below nav links */
 }
 
 .footer-left .nav-ul a {
@@ -983,16 +983,16 @@ $header-font-family: $sans-serif;
 }
 
 .footer-right .footer-logos img:first-child {
-  height: 60px; /* Adjusted logo size */
-  margin-bottom: 1em;
+  height: 60px;
+  margin-bottom: 0.75em; /* Adjusted space between the two logos */
 }
 
 .footer-right .footer-logos img:last-child {
-  height: 45px; /* Adjusted logo size */
+  height: 45px;
 }
 
 .footer-right .footer-text {
-  margin-top: 1.5em;
+  margin-top: 1em; /* Reduced space above the copyright text */
   font-size: 0.8em;
   opacity: 0.8;
 }
@@ -1000,7 +1000,7 @@ $header-font-family: $sans-serif;
 /* --- Mobile styles for the footer --- */
 @media (max-width: 767px) {
   .footer-container {
-    flex-direction: column; /* Stack the columns on mobile */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
