@@ -800,6 +800,8 @@ $header-font-family: $sans-serif;
     
     .timeline-content {
       width: 100%;         
+      padding-left: 0.1em;  
+      padding-right: 0.1em;
       margin-bottom: 20px;
       text-align: center;
     }
