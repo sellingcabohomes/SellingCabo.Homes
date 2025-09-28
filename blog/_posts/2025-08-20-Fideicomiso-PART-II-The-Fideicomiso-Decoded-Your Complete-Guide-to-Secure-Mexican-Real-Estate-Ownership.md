@@ -3,10 +3,10 @@ layout: single
 title: "The Fideicomiso Decoded: Your Complete Guide to Secure Mexican Real Estate Ownership"
 author: "Sebastian Dee | SellingCabo.Homes"
 description: "Discover the complete guide to the fideicomiso, a secure bank trust for foreign real estate ownership in Mexico. Learn how it works, bust common myths, and understand the legal process in Los Cabos."
-permalink: 
+permalink: /blog/how-fideicomiso-works-mexico/
 seo:
   title: "Is a Fideicomiso Safe? The Truth About Mexico's Property Trust"
-image:/blog/how-fideicomiso-works-mexico/
+image:
   path: /assets/los-cabos-luxury-property.jpg
   alt: "A luxury home in Los Cabos with an infinity pool overlooking the ocean, representing a successful real estate investment through a fideicomiso."
 header:
