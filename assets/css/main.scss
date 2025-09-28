@@ -922,7 +922,7 @@ $header-font-family: $sans-serif;
 ==========================================================================
 */
 
-/* Hide the "Follow" button that appears on mobile post layouts */
-.author__urls .btn--follow {
+/* Hide the author/follow block that appears above the title on mobile posts */
+.layout--single .sidebar.sticky {
   display: none !important;
 }
