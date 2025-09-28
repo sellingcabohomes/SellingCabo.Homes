@@ -105,7 +105,7 @@ The whole process typically takes 60-90 days and involves various fees and taxes
 
 Foreign investors in Mexico's restricted zone have two legal options for property ownership. Understanding when to use each can save you thousands in taxes and administrative headaches.
 
-This structure is also the legal foundation for modern ownership models like [deeded fractional ownership](/fractional-ownership-vacation-homes/), which provides a more accessible and hassle-free way to own a luxury vacation home compared to a full-time residence.
+This structure is also the legal foundation for modern ownership models like [deeded fractional ownership](/blog/fractional-ownership-vacation-homes/), which provides a more accessible and hassle-free way to own a luxury vacation home compared to a full-time residence.
 
 **For Residential Property: Fideicomiso Wins Every Time**
 
