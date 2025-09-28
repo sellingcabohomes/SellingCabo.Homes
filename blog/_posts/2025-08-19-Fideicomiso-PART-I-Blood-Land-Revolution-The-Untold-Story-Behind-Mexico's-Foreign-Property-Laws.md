@@ -14,7 +14,7 @@ header:
 
 ---
 
-<div class="small-text"><strong><a href="/how-fideicomiso-works-mexico/">This is Part I of our complete fideicomiso story. [Read Part II: “The Fideicomiso Decoded: Your Complete Guide to Secure Mexican Real Estate Ownership" →]</a></strong></div>
+<div class="small-text"><strong><a href="/blog/how-fideicomiso-works-mexico/">This is Part I of our complete fideicomiso story. [Read Part II: “The Fideicomiso Decoded: Your Complete Guide to Secure Mexican Real Estate Ownership" →]</a></strong></div>
 
 ---
 
@@ -136,7 +136,7 @@ There's just one tiny problem: The Constitution says foreigners can't own it.
 
 Echeverría's team starts thinking outside the box. What if they could let foreigners control beachfront property without technically *owning* it?
 
-Enter the masterminds: A group of forward-thinking notaries and businessmen who saw the massive potential of Mexico's coasts. They'd been studying an obscure 1926 law about bank trusts – something called a <a href="/how-fideicomiso-works-mexico/">"fideicomiso."</a>
+Enter the masterminds: A group of forward-thinking notaries and businessmen who saw the massive potential of Mexico's coasts. They'd been studying an obscure 1926 law about bank trusts – something called a <a href="/blog/how-fideicomiso-works-mexico/">"fideicomiso."</a>
 
 The idea was elegant in its simplicity:
 
@@ -185,7 +185,7 @@ The fideicomiso law had just been passed. For the first time in Mexican history,
 
 Everything aligned perfectly. The infrastructure was ready. The legal framework was solid. The government's infrastructure investment was just the beginning. 
 
-<a href="/los-cabos-closing-costs/">Today's foreign buyers need to understand the complete financial picture when investing in Los Cabos real estate, including all acquisition costs and ongoing expenses.</a>
+<a href="/blog/los-cabos-closing-costs/">Today's foreign buyers need to understand the complete financial picture when investing in Los Cabos real estate, including all acquisition costs and ongoing expenses.</a>
 
 All they needed was someone brave enough to bet big on a desert peninsula at the edge of nowhere.
 
@@ -227,7 +227,7 @@ And here's the plot twist that'll blow your mind: The fideicomiso system is so w
 
 Want to know how they pulled that off? 
 
-<div class="small-text"><strong><a href="/how-fideicomiso-works-mexico/">[Continue to Part II: The Fideicomiso Decoded →]</a></strong></div><br>
+<div class="small-text"><strong><a href="/blog/how-fideicomiso-works-mexico/">[Continue to Part II: The Fideicomiso Decoded →]</a></strong></div><br>
 
 
 *Trust me, you won't want to miss what happens next...*
