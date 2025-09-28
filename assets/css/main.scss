@@ -698,11 +698,20 @@ $header-font-family: $sans-serif;
    
 /* --- Mobile Homepage Adjustments --- */
 
+/* 1. Mobile Card Adjustments --- */
+.author-block,
+.step-block {
+  margin-left: 1em;   /* Pulls the card away from the left edge */
+  margin-right: 1em;  /* Pulls the card away from the right edge */
+  padding: 1em;       /* Reduces the padding inside the card */
+  width: auto;        /* Ensures the card respects the new margins */
+}
+
 /* 2. Add horizontal bars under the timeline numbers */
 .timeline-number .number::after {
   content: '';
   display: block;
-  width: 60px;
+  width: 100px;
   height: 4px;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
   border-radius: 2px;
