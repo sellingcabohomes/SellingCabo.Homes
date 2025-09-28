@@ -21,7 +21,10 @@ title                    : "SellingCabo.Homes | Sebastian Dee"
 title_separator          : "-"
 subtitle                 : "Your Expert Guide to Los Cabos Real Estate"
 name                     : "Sebastian Dee"
-description              : "Your expert guide to making intelligent real estate decisions in Los Cabos, Mexico."
+description              : "A real estate blog about buying and selling homes in Los Cabos, Mexico. 
+                            Published by Sebastian Dee, a Los Cabos real estate agent with Ronival Real Estate. 
+                            This site shares insights on the buying and selling process, new developments, 
+                            market updates, and life in Los Cabos for homeowners and investors."
 url                      : "https://sellingcabo.homes"
 baseurl                  : ""
 repository               : "sellingcabohomes/SellingCabo.Homes"

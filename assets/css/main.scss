@@ -935,11 +935,11 @@ $header-font-family: $sans-serif;
 
 .page__footer {
   padding-top: 2em;
+  text-align: center; /* Center everything within the footer */
 }
 .page__footer-nav {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
 .page__footer-nav h3 {
   margin-bottom: 1em;
@@ -949,7 +949,7 @@ $header-font-family: $sans-serif;
 .nav-ul {
   list-style: none;
   padding-left: 0;
-  margin: 0 auto 1.5em auto; /* Adjusted margin */
+  margin: 0 auto 1.5em auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -959,8 +959,6 @@ $header-font-family: $sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
-
-/* NEW: Styles for the Font Awesome icons */
 .author__urls-ul {
   list-style-type: none;
   margin: 0 auto 2em auto;
@@ -969,18 +967,15 @@ $header-font-family: $sans-serif;
   gap: 1.5em;
 }
 .author__urls-ul .label {
-  display: none; /* Hides the text label like "Facebook" */
+  display: none;
 }
 .author__urls-ul i {
-  font-size: 1.8em; /* Controls the icon size */
+  font-size: 1.8em;
 }
-/* END NEW icon styles */
-
 .page__footer-copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 1.5em;
 }
 .footer-logos img:first-child {
@@ -998,22 +993,16 @@ $header-font-family: $sans-serif;
   font-size: 0.8em;
   opacity: 0.8;
   margin-top: 1em;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .page__footer-copyright {
     flex-direction: row;
-    text-align: left;
   }
   .footer-logos {
-    text-align: right;
     padding-right: 2em;
     border-right: 1px solid #e5e7eb;
   }
   .footer-text {
     padding-left: 2em;
-  }
-  .footer-disclaimer {
-    text-align: left;
   }
 }

@@ -4,19 +4,21 @@
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/blog/about/">About Me</a></li>
-    <li><a href="https://sebastian.findmexicohouses.com/results-gallery/?custom=114628%2C114629%2C114630%2C114633%2C114634%2C114635&userid=all" target="_blank" rel="noopener noreferrer">Property Search</a></li>
+    <li><a href="https://sebastian.findmexicohouses.com" target="_blank" rel="noopener noreferrer">Property Search</a></li>
   </ul>
 </div>
 
 <div class="author__urls social-icons">
   <ul class="author__urls-ul">
     {% for link in site.author.links %}
-      <li>
-        <a href="{{ link.url }}" itemprop="sameAs" rel="nofollow noopener noreferrer" target="_blank">
-          <i class="{{ link.icon }}" aria-hidden="true"></i>
-          <span class="label">{{ link.label }}</span>
-        </a>
-      </li>
+      {% if link.label != 'Website' and link.label != 'Property Search' %}
+        <li>
+          <a href="{{ link.url }}" itemprop="sameAs" rel="nofollow noopener noreferrer" target="_blank">
+            <i class="{{ link.icon }}" aria-hidden="true"></i>
+            <span class="label">{{ link.label }}</span>
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
