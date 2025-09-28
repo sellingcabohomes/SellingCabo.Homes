@@ -96,6 +96,6 @@ I'll see you soon in Cabo.
 Sebastian De la Peña (Sebastian Dee)
 <a href="mailto:sdelapena@ronival.com">sdelapena@ronival.com</a> <br>
 Licensed Real Estate Agent | Ronival Real Estate <br>
-<a href="http://sellingcabo.homes" target="_blank">SellingCabo.Homes</a>
+[SellingCabo.Homes](/)
 
 ---
