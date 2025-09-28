@@ -6,7 +6,7 @@ permalink: /blog/
 breadcrumb: false
 header:
   overlay_image: /assets/Images/cabo_beach.png
-  overlay_filter: 0.3
+  overlay_filter: 0.1
   actions:
     - label: "Browse Articles"
       url: "/blog/#recent-posts"
