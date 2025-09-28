@@ -4,6 +4,11 @@ title: "Blood, Land & Revolution: The Untold Story of the Fideicomiso & Mexico's
 author: "Sebastian Dee | SellingCabo.Homes"
 description: "Discover the untold story of the fideicomiso. Learn how Mexico's foreign property laws were created, how they affect Los Cabos real estate, and why a Mexican bank trust is the key to secure ownership."
 permalink: /blog/history-of-fideicomiso-mexico-property-law/
+seo:
+  title:Why the Fideicomiso Exists: A Foreign Buyer's History Guide
+image:
+  path: /assets/Fideicomiso-part-I.jpg
+  alt: "A historical collage in sepia showing the story of the fideicomiso: Mexican revolutionaries, a French pastry shop, and a map of Mexico's Restricted Zone."
 header:
   teaser: /assets/Fideicomiso-part-I.jpg
 ---
