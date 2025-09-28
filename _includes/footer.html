@@ -4,38 +4,32 @@
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/blog/about/">About Me</a></li>
-    <li><a href="https://sebastian.findmexicohouses.com" target="_blank" rel="noopener noreferrer">Property Search</a></li>
+    <li><a href="https://sebastian.findmexicohouses.com/results-gallery/?custom=114628%2C114629%2C114630%2C114633%2C114634%2C114635&userid=all" target="_blank" rel="noopener noreferrer">Property Search</a></li>
   </ul>
-  <div class="footer-social-icons">
-    <a href="https://facebook.com/sebastiandeehomes" target="_blank" rel="noopener noreferrer" title="Facebook">
-      <img src="/assets/Images/facebook_icon.png" alt="Facebook">
-    </a>
-    <a href="https://instagram.com/sebastiandeehomes" target="_blank" rel="noopener noreferrer" title="Instagram">
-      <img src="/assets/Images/instagram_icon.png" alt="Instagram">
-    </a>
-    <a href="https://linkedin.com/in/sebastiandeehomes" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-      <img src="/assets/Images/linkedin_icon.png" alt="LinkedIn">
-    </a>
-  </div>
+</div>
+
+<div class="author__urls social-icons">
+  <ul class="author__urls-ul">
+    {% for link in site.author.links %}
+      <li>
+        <a href="{{ link.url }}" itemprop="sameAs" rel="nofollow noopener noreferrer" target="_blank">
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+          <span class="label">{{ link.label }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="page__footer-copyright">
   <div class="footer-logos">
-    <img src="/assets/Images/sellingcabo.homes_black.png" alt="Selling Cabo Homes Logo" style="height: 70px; margin-bottom: 1em;">
-    <img src="/assets/Images/Logo_Ronival_Blue_sin_BG.png" alt="Ronival Real Estate Logo" style="height: 50px;">
+    <img src="/assets/Images/sellingcabo.homes_black.png" alt="Selling Cabo Homes Logo">
+    <img src="/assets/Images/Logo_Ronival_Blue_sin_BG.png" alt="Ronival Real Estate Logo">
   </div>
   <div class="footer-text">
     &copy; 2025 Sebastian Dee. All Rights Reserved.<br>
-    
     <p class="footer-disclaimer">
       A real estate blog about buying and selling homes in Los Cabos, Mexico. Published by Sebastian Dee, a Los Cabos real estate agent with Ronival Real Estate. This site shares insights on the buying and selling process, new developments, market updates, and life in Los Cabos for homeowners and investors.
     </p>
-
   </div>
 </div>
-
-<style>
-  .page__footer {
-    padding-top: 2em;
-  }
-  .page__footer

@@ -926,3 +926,94 @@ $header-font-family: $sans-serif;
 .layout--single .sidebar.sticky {
   display: none !important;
 }
+
+/*
+==========================================================================
+    BLOG FOOTER STYLES
+==========================================================================
+*/
+
+.page__footer {
+  padding-top: 2em;
+}
+.page__footer-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.page__footer-nav h3 {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1em;
+}
+.nav-ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto 1.5em auto; /* Adjusted margin */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.nav-ul a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* NEW: Styles for the Font Awesome icons */
+.author__urls-ul {
+  list-style-type: none;
+  margin: 0 auto 2em auto;
+  padding: 0;
+  display: inline-flex;
+  gap: 1.5em;
+}
+.author__urls-ul .label {
+  display: none; /* Hides the text label like "Facebook" */
+}
+.author__urls-ul i {
+  font-size: 1.8em; /* Controls the icon size */
+}
+/* END NEW icon styles */
+
+.page__footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+}
+.footer-logos img:first-child {
+  height: 70px;
+  margin-bottom: 1em;
+}
+.footer-logos img:last-child {
+  height: 50px;
+}
+.footer-text {
+  width: 100%;
+  max-width: 600px;
+}
+.footer-disclaimer {
+  font-size: 0.8em;
+  opacity: 0.8;
+  margin-top: 1em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .page__footer-copyright {
+    flex-direction: row;
+    text-align: left;
+  }
+  .footer-logos {
+    text-align: right;
+    padding-right: 2em;
+    border-right: 1px solid #e5e7eb;
+  }
+  .footer-text {
+    padding-left: 2em;
+  }
+  .footer-disclaimer {
+    text-align: left;
+  }
+}
