@@ -20,6 +20,5 @@ Here, you won't find sugar-coated sales pitches. You'll find data-driven **[mark
 
 I'm Sebastian Dee, and my entire approach is education-first. My goal is to give you the clarity you need to make an informed decision. 
 
-Browse the latest articles below to get started.
-
 <div id="recent-posts"></div>
+<h2 id="recent-posts">Browse the latest articles below to get started.</h2>
