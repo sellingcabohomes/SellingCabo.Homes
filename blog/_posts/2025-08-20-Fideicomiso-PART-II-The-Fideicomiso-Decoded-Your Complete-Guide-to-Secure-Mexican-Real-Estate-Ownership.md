@@ -3,10 +3,10 @@ layout: single
 title: "The Fideicomiso Decoded: Your Complete Guide to Secure Mexican Real Estate Ownership"
 author: "Sebastian Dee | SellingCabo.Homes"
 description: "Discover the complete guide to the fideicomiso, a secure bank trust for foreign real estate ownership in Mexico. Learn how it works, bust common myths, and understand the legal process in Los Cabos."
-permalink: /blog/how-fideicomiso-works-mexico/
+permalink: 
 seo:
   title: "Is a Fideicomiso Safe? The Truth About Mexico's Property Trust"
-image:
+image:/blog/how-fideicomiso-works-mexico/
   path: /assets/los-cabos-luxury-property.jpg
   alt: "A luxury home in Los Cabos with an infinity pool overlooking the ocean, representing a successful real estate investment through a fideicomiso."
 header:
@@ -25,7 +25,7 @@ header:
 * [Inheritance and Estate Planning](#inheritance-and-estate-planning-simpler-than-you-think)
 
 ---
-<div class="small-text"><strong><a href="/history-of-fideicomiso-mexico-property-law/">Haven't read Part I?: Start with the revolutionary history →</a></strong></div>
+<div class="small-text"><strong><a href="/blog/history-of-fideicomiso-mexico-property-law/">Haven't read Part I?: Start with the revolutionary history →</a></strong></div>
 
 ---
 <br>
@@ -99,7 +99,7 @@ Pay your annual trustee fee (typically $500-700) and renew your trust every 50 y
 
 The whole process typically takes 60-90 days and involves various fees and taxes. 
 
-<a href="/los-cabos-closing-costs/">For a detailed breakdown of every cost involved in Mexican real estate transactions, including notary fees, registration costs, and tax obligations, understanding the complete fee structure is essential for proper budgeting.</a>
+<a href="/blog/los-cabos-closing-costs/">For a detailed breakdown of every cost involved in Mexican real estate transactions, including notary fees, registration costs, and tax obligations, understanding the complete fee structure is essential for proper budgeting.</a>
 
 ## Fideicomiso vs Mexican Corporation: Choosing Your Investment Structure
 
@@ -129,13 +129,13 @@ If you're buying rental property, hotels, or commercial real estate for business
 
 **The Downside:** Mexican corporations require ongoing accounting, annual shareholder meetings, monthly tax filings, and don't qualify for residential tax exemptions. Expect $2,000-5,000 annually in accounting fees.
 
-<a href="/los-cabos-closing-costs/">When comparing total ownership costs between fideicomisos and corporations, analyzing all associated expenses helps determine the most cost-effective structure for your situation</a>
+<a href="/blog/los-cabos-closing-costs/">When comparing total ownership costs between fideicomisos and corporations, analyzing all associated expenses helps determine the most cost-effective structure for your situation</a>
 
 **Bottom Line:** For 90% of foreign buyers in Los Cabos, the fideicomiso is simpler, cheaper, and more tax-efficient.
 
 ## Busting the Biggest Fideicomiso Myths
 
-Despite 50+ years of proven success, myths about Mexican real estate ownership persist. Let <a href="/about/">me</a> destroy the biggest ones with facts.
+Despite 50+ years of proven success, myths about Mexican real estate ownership persist. Let <a href="blog/about/">me</a> destroy the biggest ones with facts.
 
 **Myth #1: "The Bank Really Owns My Property"**
 
@@ -221,7 +221,7 @@ Now you know the complete story – from revolutionary battlefields to modern-da
 
 **If You're Considering Los Cabos Real Estate:**
 
-1. **Get Professional Guidance:** Our complete **<a href="/los-cabos-real-estate-buyers-guide/">Los Cabos Buyer's Guide</a>** and a team of experienced agents, and Mexican real estate attorneys, can guide you through every step of the process.
+1. **Get Professional Guidance:** Our complete **<a href="/blog/los-cabos-real-estate-buyers-guide/">Los Cabos Buyer's Guide</a>** and a team of experienced agents, and Mexican real estate attorneys, can guide you through every step of the process.
 2. **Choose Your Trustee Bank Carefully:** Research fees, service quality, and reputation
 3. **Understand Total Costs:** Factor in acquisition taxes, annual fees, and maintenance costs
 4. **Plan for Inheritance:** Name beneficiaries clearly and understand cross-border tax implications
@@ -236,7 +236,7 @@ The revolution that started with "Tierra y Libertad" ultimately created "Tierra 
 
 And now you know exactly how to seize it.
 
-<a href="/history-of-fideicomiso-mexico-property-law/"><strong>[Read Part I: The Revolutionary History →]</strong></a>
+<a href="/blog/history-of-fideicomiso-mexico-property-law/"><strong>[Read Part I: The Revolutionary History →]</strong></a>
 
 ---
 
@@ -244,7 +244,7 @@ And now you know exactly how to seize it.
 
 We've compiled both parts of this epic tale into a single downloadable PDF – the complete history and practical guide to Mexican real estate ownership, from revolutionary battlefields to modern investment opportunities.
 
-<a href="https://blog.sellingcabo.homes/assets/los-cabos-real-estate-fideicomiso-trust-book.pdf?utm_source=blog&utm_medium=fideicomisopartIIpost&utm_campaign=fideicomiso_guide_download" target="_blank">Get the complete story right here and keep it at your fingertips.</a>
+<a href="/assets/los-cabos-real-estate-fideicomiso-trust-book.pdf" target="_blank">Get the complete story right here and keep it at your fingertips.</a>
 
 ---
 
