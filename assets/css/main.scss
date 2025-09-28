@@ -707,17 +707,6 @@ $header-font-family: $sans-serif;
   width: auto;        /* Ensures the card respects the new margins */
 }
 
-/* 2. Add horizontal bars under the timeline numbers */
-.timeline-number .number::after {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border-radius: 2px;
-  margin: 0.75em auto 0;
-}
-
 /* 3. Fix the white space on the hero image */
 .hero-section {
   width: 100%; /* This prevents overflow from the scrollbar */
@@ -791,6 +780,17 @@ $header-font-family: $sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
+    }
+
+    .timeline-number .number::after {
+      content: '';
+      display: block;
+      width: 100px; /* You can still change this value to make it longer or shorter */
+      height: 4px;
+      background: linear-gradient(to right, #0ea5e9, #20c997, #f0ad4e, #e4572e); /* The "rainbow" */
+      border-radius: 2px;
+      margin: 0.75em auto 0;
     }
     
     .connecting-line {
