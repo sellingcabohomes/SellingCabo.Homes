@@ -428,7 +428,7 @@ While no real estate is guaranteed to appreciate, a fractional ownership investm
 ### What are the true costs compared to owning a second home?
 
 
-The primary benefit is avoiding the high, unpredictable costs of vacation homes. With whole ownership, you bear 100% of property taxes, insurance, utilities, and maintenance. With fractional ownership at Oceana, these expenses are divided among co-owners and covered by predictable annual dues, eliminating the financial stress and the <a href="/los-cabos-real-estate-buyers-guide/">hassle of owning a second home</a>.
+The primary benefit is avoiding the high, unpredictable costs of vacation homes. With whole ownership, you bear 100% of property taxes, insurance, utilities, and maintenance. With fractional ownership at Oceana, these expenses are divided among co-owners and covered by predictable annual dues, eliminating the financial stress and the <a href="/blog/los-cabos-real-estate-buyers-guide/">hassle of owning a second home</a>.
 
 
 ### What happens if I want to sell my fractional share?
