@@ -28,7 +28,7 @@ You've fallen in love with Los Cabos.
 
 The stunning coastline. The perfect weather. The vibrant culture.
 
-You're ready to make it your home, but the journey from dream to reality requires a solid plan, as outlined in our **<a href="/los-cabos-real-estate-buyers-guide/">Los Cabos Buyer's Guide</a>**.
+You're ready to make it your home, but the journey from dream to reality requires a solid plan, as outlined in our **<a href="/blog/los-cabos-real-estate-buyers-guide/">Los Cabos Buyer's Guide</a>**.
 
 And here's what nobody tells you...
 
@@ -121,7 +121,7 @@ Here's exactly what goes into those closing costs:
 
 ### Additional Costs for Foreign Buyers:
 
-<a href="/how-fideicomiso-works-mexico/">**Fideicomiso Setup:**</a> ~$600 (MXN $12,000) <br>
+<a href="/blog/how-fideicomiso-works-mexico/">**Fideicomiso Setup:**</a> ~$600 (MXN $12,000) <br>
 **Fideicomiso Annual Fee:** ~$600 (first year) <br>
 **SRE Permit:** ~$1,500 (MXN $30,000) <br>
 **RNIE Registration:** ~$300 (MXN $6,000)
@@ -185,7 +185,7 @@ Yes, you'll pay ~$650 annually for fideicomiso (bank trust) maintenance.
 
 But you're saving $4K-$19K per year in property taxes compared to home.
 
-The <a href="/history-of-fideicomiso-mexico-property-law/">fideicomiso</a> fee is less than what you'd pay in property taxes for just one month back home.
+The <a href="/blog/history-of-fideicomiso-mexico-property-law/">fideicomiso</a> fee is less than what you'd pay in property taxes for just one month back home.
 
 <a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Calculate how much you'll actually save</a> when you factor in the tax advantages.
 
@@ -215,11 +215,11 @@ You know exactly what to budget from day one.
 
 ## Why You Can Trust This Information
 
-As someone who's lived in Los Cabos for over 4 years and <a href="/about/">navigated the Mexican real estate system myself</a>, I've seen firsthand how these closing costs surprise even locals.
+As someone who's lived in Los Cabos for over 4 years and <a href="/blog/about/">navigated the Mexican real estate system myself</a>, I've seen firsthand how these closing costs surprise even locals.
 
 I've educated myself on Mexican property law, built relationships with the best notaries and lawyers, and helped buyers avoid costly mistakes.
 
-Because at <a href="http://sellingcabo.homes" target="_blank">Selling Cabo Homes</a> we believe in transparency - no hidden surprises, no last-minute shocks.
+Because at <a href="/" target="_blank">Selling Cabo Homes</a> we believe in transparency - no hidden surprises, no last-minute shocks.
 
 I hate going to a restaurant, ordering a $10 meal, and getting a $30 check because of hidden fees and taxes.
 
@@ -282,7 +282,7 @@ Whether you're just beginning to explore, actively researching, or ready to star
 A: Los Cabos closing costs range from 4-9% of the property value, depending on the price range. Properties under $500K typically see 6-9%, while luxury properties over $3M can be as low as 4%. This is significantly higher than US (2-3%) or Canadian (1.5-2.5%) closing costs due to Mexico's unique legal requirements.
 
 ### Q: What is a fideicomiso and how much does it cost?
-A: A <a href="/how-fideicomiso-works-mexico/">fideicomiso</a> is a bank trust required for foreign buyers... is a bank trust required for foreign buyers purchasing property within 50km of the coast or 100km of international borders. Setup costs approximately $600 (MXN $12,000), with an annual maintenance fee of $600. This allows foreigners to legally own beachfront property in Mexico.
+A: A <a href="/blog/how-fideicomiso-works-mexico/">fideicomiso</a> is a bank trust required for foreign buyers... is a bank trust required for foreign buyers purchasing property within 50km of the coast or 100km of international borders. Setup costs approximately $600 (MXN $12,000), with an annual maintenance fee of $600. This allows foreigners to legally own beachfront property in Mexico.
 
 ### Q: Are Los Cabos closing costs tax deductible?
 A: Yes! All closing costs become tax deductible when you sell the property, reducing your capital gains tax dollar-for-dollar. This can save thousands in taxes and significantly improves the investment math.
