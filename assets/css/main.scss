@@ -937,7 +937,6 @@ $header-font-family: $sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5em 1em; /* Reduced top and bottom padding */
-  border-top: 1px solid #e5e7eb;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -960,6 +959,7 @@ $header-font-family: $sans-serif;
   text-decoration: none;
   font-weight: bold;
   line-height: 2;
+  font-size: 0.9em;
 }
 
 .footer-left .author__urls-ul {
@@ -975,7 +975,7 @@ $header-font-family: $sans-serif;
 }
 
 .footer-left .author__urls-ul i {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .footer-right {
