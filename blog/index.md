@@ -22,4 +22,4 @@ I'm Sebastian Dee, and my entire approach is education-first. My goal is to give
 
 Browse the latest articles below to get started.
 
-<h2 id="recent-posts">Recent posts</h2>
+<div id="recent-posts"></div>
