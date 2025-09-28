@@ -313,7 +313,7 @@ Fractional ownership follows the same appreciation patterns as whole ownership r
 
 Not even close. Timeshares are right-to-use programs that depreciate immediately. This is deeded real estate ownership with **unlimited flexible usage**. You own an asset, not vacation time.
 
-*For a complete breakdown of the five key differences, see our in-depth* <a href="/fractional-ownership-vs-timeshare/">*comparison of fractional ownership vs. timeshares in Los Cabos*</a>.
+*For a complete breakdown of the five key differences, see our in-depth* <a href="/blog/fractional-ownership-vs-timeshare/">*comparison of fractional ownership vs. timeshares in Los Cabos*</a>.
 
 
 
@@ -400,7 +400,7 @@ Deeded fractional ownership is a form of direct property ownership where you buy
 
 
 
-### What is the difference between <a href="/fractional-ownership-vs-timeshare/">fractional ownership vs timeshare</a>?
+### What is the difference between <a href="/blog/fractional-ownership-vs-timeshare/">fractional ownership vs timeshare</a>?
 
 
 The difference is fundamental. A timeshare sells you the *right to use* a property for a set time, which is a depreciating product. Deeded fractional ownership is a *real estate investment*. You are buying an actual share of the property, an asset with resale value, making it a superior alternative to timeshares.
@@ -410,7 +410,7 @@ The difference is fundamental. A timeshare sells you the *right to use* a proper
 ### How can foreigners (like US & Canadian citizens) legally own property in Cabo?
 
 
-Foreigners can securely own property in coastal regions like Los Cabos through a legal trust called a *<a href="/how-fideicomiso-works-mexico/">**fideicomiso**</a>*. A Mexican bank holds the title in trust for you, the beneficiary. You have all the rights of ownership: to use, enjoy, and sell the property. This is a standard, safe, and federally approved process for foreign real estate investment in Mexico.
+Foreigners can securely own property in coastal regions like Los Cabos through a legal trust called a *<a href="/blog/how-fideicomiso-works-mexico/">**fideicomiso**</a>*. A Mexican bank holds the title in trust for you, the beneficiary. You have all the rights of ownership: to use, enjoy, and sell the property. This is a standard, safe, and federally approved process for foreign real estate investment in Mexico.
 
 
 ### What is a Private Residence Club (PRC)?
@@ -422,7 +422,7 @@ A Private Residence Club is the highest tier of fractional ownership, focused on
 ### Is fractional ownership a good investment?
 
 
-While no real estate is guaranteed to appreciate, a fractional ownership investment has major advantages. Its value is tied to the <a href="/los-cabos-real-estate-market-report-august-2025/">local real estate market</a>, just like whole ownership. By sharing costs, you mitigate risk and can enter a luxury market like Los Cabos for a fraction of the price, potentially leading to a better return on investment (ROI) and a clear exit strategy.
+While no real estate is guaranteed to appreciate, a fractional ownership investment has major advantages. Its value is tied to the <a href="/blog/los-cabos-real-estate-market-report-august-2025/">local real estate market</a>, just like whole ownership. By sharing costs, you mitigate risk and can enter a luxury market like Los Cabos for a fraction of the price, potentially leading to a better return on investment (ROI) and a clear exit strategy.
 
 
 ### What are the true costs compared to owning a second home?

@@ -48,9 +48,9 @@ The numbers reveal three major changes happening right now in Los Cabos real est
 
 Market data only gets you so far. If you're serious about buying in Mexico, you need to understand the process:
 
-* **[Los Cabos Closing Costs 2025](/los-cabos-closing-costs/)**: The complete breakdown of every expense you'll face.
-* **[The Fideicomiso Decoded](/how-fideicomiso-works-mexico/)**: How foreigners legally own coastal property in Mexico.
-* **[Blood, Land & Revolution](/history-of-fideicomiso-mexico-property-law/)**: The history behind Mexico's property ownership laws.
+* **[Los Cabos Closing Costs 2025](/blog/los-cabos-closing-costs/)**: The complete breakdown of every expense you'll face.
+* **[The Fideicomiso Decoded](/blog/how-fideicomiso-works-mexico/)**: How foreigners legally own coastal property in Mexico.
+* **[Blood, Land & Revolution](/blog/history-of-fideicomiso-mexico-property-law/)**: The history behind Mexico's property ownership laws.
 
 ## Get the Full Picture
 
@@ -58,6 +58,6 @@ These market-wide numbers don't tell you everything about your specific situatio
 
 If you want to know how these trends affect your particular real estate goals in Los Cabos, hit me up. I'll break down exactly what's happening in your area and what it means for you.
 
-**<a href="/about/">Learn more about my approach or get in touch.</a>**
+**<a href="/blog/about/">Learn more about my approach or get in touch.</a>**
 
 **<a href="https://consultation.sellingcabo.homes/" target="_blank">Schedule your complimentary consultation here.</a>**

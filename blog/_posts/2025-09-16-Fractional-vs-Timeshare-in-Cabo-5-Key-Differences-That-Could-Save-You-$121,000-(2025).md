@@ -118,7 +118,7 @@ With fractional ownership, you own actual real estate.
 
 
 
-A  [deeded piece of property](/fractional-ownership-vacation-homes/).
+A  [deeded piece of property](/blog/fractional-ownership-vacation-homes/).
 
 
 
@@ -254,7 +254,7 @@ It appreciates.
 
 
 
-In Los Cabos, luxury properties have seen <a href="/los-cabos-real-estate-market-report-august-2025/">consistent appreciation</a> as the destination becomes more exclusive.
+In Los Cabos, luxury properties have seen <a href="/blog/los-cabos-real-estate-market-report-august-2025/">consistent appreciation</a> as the destination becomes more exclusive.
 
 
 
@@ -577,7 +577,7 @@ Great question.
 
 
 
-But before diving into a specific project, you can explore the model in even greater detail in our **[in-depth guide to fractional ownership in Los Cabos](/fractional-ownership-vacation-homes/)**.
+But before diving into a specific project, you can explore the model in even greater detail in our **[in-depth guide to fractional ownership in Los Cabos](/blog/fractional-ownership-vacation-homes/)**.
 
 
 
