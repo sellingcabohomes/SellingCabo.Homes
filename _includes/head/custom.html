@@ -1,0 +1,7 @@
+{% if page.url == "/" %}
+  {% include schema-realestate-agent.html %}
+{% endif %}
+
+{% if page.url contains "/blog/about/" %}
+  {% include schema-person.html %}
+{% endif %}
