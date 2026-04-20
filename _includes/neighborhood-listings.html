@@ -1,0 +1,350 @@
+<!-- ============================================================
+  NEIGHBORHOOD LISTINGS + FEATURED PROPERTY INCLUDE
+  Drop into any page with: {% include neighborhood-listings.html %}
+  
+  TO UPDATE FEATURED PROPERTIES: Edit the 'featuredProperties' 
+  array below. Each property needs: url, photo, price, beds, baths, area
+  ============================================================ -->
+
+<style>
+.neighborhoods-section {
+  padding: 3rem 0 2rem;
+  background: #f8f6f1;
+  margin: 3rem -9999px;
+  padding-left: 9999px;
+  padding-right: 9999px;
+}
+.neighborhoods-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.neighborhoods-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+.neighborhoods-subhead {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+.neighborhoods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 900px) {
+  .neighborhoods-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .neighborhoods-grid { grid-template-columns: 1fr; }
+}
+.neighborhood-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.neighborhood-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+  text-decoration: none;
+}
+.neighborhood-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.neighborhood-card-img-placeholder {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.neighborhood-card-body {
+  padding: 0.85rem 1rem 1rem;
+}
+.neighborhood-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.2rem;
+}
+.neighborhood-card-tagline {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+.neighborhood-card-cta {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a6b9a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.neighborhood-card-cta::after {
+  content: ' →';
+}
+
+/* Featured property */
+.featured-property-wrap {
+  background: #1a2a3a;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 220px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 680px) {
+  .featured-property-wrap { grid-template-columns: 1fr; }
+}
+.featured-property-img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.featured-property-img-placeholder {
+  width: 100%;
+  min-height: 200px;
+  background: #2a3f52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.featured-property-content {
+  padding: 1.75rem 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured-badge {
+  display: inline-block;
+  background: #c8960c;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+.featured-property-price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.3rem;
+  letter-spacing: -0.02em;
+}
+.featured-property-area {
+  font-size: 0.85rem;
+  color: #8fafc8;
+  margin: 0 0 0.5rem;
+}
+.featured-property-details {
+  font-size: 0.82rem;
+  color: #aac4d8;
+  margin: 0 0 1.25rem;
+}
+.featured-property-btn {
+  display: inline-block;
+  background: #1a6b9a;
+  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.2s;
+}
+.featured-property-btn:hover {
+  background: #155a84;
+  text-decoration: none;
+  color: #fff !important;
+}
+.featured-section-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+</style>
+
+<section class="neighborhoods-section">
+  <div class="neighborhoods-inner">
+
+    <h2 class="neighborhoods-heading">Browse Properties by Neighborhood</h2>
+    <p class="neighborhoods-subhead">Click any area to see current listings in the gallery</p>
+
+    <div class="neighborhoods-grid">
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMy4wMTc2Nzc4MDk5MjE0NzMsImxuZyI6LTEwOS42OTY4MzI5MzA2MTQ1M30seyJsYXQiOjIzLjAzMjA1NDUzNjQyNjA4LCJsbmciOi0xMDkuNzE4MjA0NzcyMDQ1Mn0seyJsYXQiOjIzLjAzMjEzMzUyNTE5MzUyMiwibG5nIjotMTA5LjcxODIwNDc3MjA0NTJ9LHsibGF0IjoyMy4wMzQxMDgyMjkzMzM0LCJsbmciOi0xMDkuNzU4NDU5MzY0OTQwN30seyJsYXQiOjIzLjAzMzk1MDI1NDA2NzA0NywibG5nIjotMTA5Ljc1ODcxNjg1NzAwNjE0fSx7ImxhdCI6MjMuMDI2NDQ2MjE1NjE0MzQyLCJsbmciOi0xMDkuNzYwMzQ3NjQwMDg3MTl9LHsibGF0IjoyMy4wMjU4MTQyNzc1MTUyNywibG5nIjotMTA5Ljc2MDA5MDE0ODAyMTc2fSx7ImxhdCI6MjMuMDA1NDMyNjg1OTM0MzM0LCJsbmciOi0xMDkuNzQ2MDEzOTE1MTExNn0seyJsYXQiOjIzLjAwNDk1ODY1ODc5MTM2NywibG5nIjotMTA5Ljc0NTY3MDU5MjM1Nzd9LHsibGF0IjoyMi45OTMxODY0NTA3MDI4NjUsImxuZyI6LTEwOS43MjUwNzEyMjcxMjMzMn0seyJsYXQiOjIyLjk5MzAyODQyNzUwNDU4NywibG5nIjotMTA5LjcyNDA0MTI1ODg2MTZ9LHsibGF0IjoyMi45OTg3MTcxNDYxMjQ2OSwibG5nIjotMTA5LjcxMTI1MjQ4NjI3ODZ9LHsibGF0IjoyMi45OTkwMzMxNzkwMTk0OTUsImxuZyI6LTEwOS43MTA4MjMzMzI4MzYyMX0seyJsYXQiOjIzLjAxNzY3NzgwOTkyMTQ3MywibG5nIjotMTA5LjY5NjQwMzc3NzE3MjE1fV0%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#1a4a6b,#2d7a9a);">🏌️</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Palmilla</p>
+          <p class="neighborhood-card-tagline">World-class golf, luxury resorts & ocean-view estates along the Corridor</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi44ODA5ODY1NTQ1OTI0NjQsImxuZyI6LTEwOS45MjczNTA0NjYzMTE3NH0seyJsYXQiOjIyLjg4NDI4Nzk4MTU1ODI0LCJsbmciOi0xMDkuOTE3MjY1MzYwNDE1NzR9LHsibGF0IjoyMi44ODQyODc5ODE1NTgyNCwibG5nIjotMTA5LjkxNzI0MzkwMjc0MzYyfSx7ImxhdCI6MjIuODgwMDU3Mzk1OTk4OTUzLCJsbmciOi0xMDkuOTEyOTczODI1OTkxOTF9LHsibGF0IjoyMi44Nzk5NzgzMTgzNzgyMiwibG5nIjotMTA5LjkxMjg4Nzk5NTMwMzQ0fSx7ImxhdCI6MjIuODc3MjUwMTEyMjU5MzUsImxuZyI6LTEwOS45MDY5MjI3NjI0NTQzMX0seyJsYXQiOjIyLjg3NzE3MTAzMzAwMzY0NSwibG5nIjotMTA5LjkwNjc1MTEwMTA3NzM2fSx7ImxhdCI6MjIuODcyODYxMTQzOTIxNDE2LCJsbmciOi0xMDkuOTExMjc4NjY5ODk0NX0seyJsYXQiOjIyLjg3MjM2Njg4MTg0NDI3NSwibG5nIjotMTA5LjkyNTQ4MzY0ODgzNzM3fSx7ImxhdCI6MjIuODcyNDA2NDIyODc2NjM3LCJsbmciOi0xMDkuOTI1NzQxMTQwOTAyOH0seyJsYXQiOjIyLjg4MTE2NDQ3Nzg1MzAyMywibG5nIjotMTA5LjkyNzM1MDQ2NjMxMTc0fV0%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#2d1a6b,#6b3a9a);">⛵</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Pedregal</p>
+          <p class="neighborhood-card-tagline">Exclusive hillside community with panoramic marina & Pacific views</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi45MTc1MTk0MDMxNzM4NjMsImxuZyI6LTEwOS44MjU1Mjg5NzcwNTMyMn0seyJsYXQiOjIyLjkyNDk4OTk2NjcwMTg0NCwibG5nIjotMTA5LjgzMjU2NzA5MzUwODN9LHsibGF0IjoyMi45MjUwMjk0OTIzOTc1NDUsImxuZyI6LTEwOS44MzI2MTAwMDg4NTI1NH0seyJsYXQiOjIyLjkyMjg5NTA4ODMyNzY1MywibG5nIjotMTA5Ljg0Mzg5Njc0NDM4NzIxfSx7ImxhdCI6MjIuOTIyODk1MDg4MzI3NjUzLCJsbmciOi0xMDkuODQzOTM5NjU5NzMxNDV9LHsibGF0IjoyMi45MTI4MTU1MDM3Mzc1ODMsImxuZyI6LTEwOS44NTA5MzQ4NjA4NDIyOX0seyJsYXQiOjIyLjkxMjY1NzM4NjYzNDk1NSwibG5nIjotMTA5Ljg1MDk3Nzc3NjE4NjUzfSx7ImxhdCI6MjIuOTA1ODE4NjQ1NDcyNjg1LCJsbmciOi0xMDkuODQ1NzQyMTA0MTg5NDV9LHsibGF0IjoyMi45MDU3Mzk1ODI4NjQyNzUsImxuZyI6LTEwOS44NDU1Mjc1Mjc0NjgyNn0seyJsYXQiOjIyLjkxMDE2NzAxNzk0MTE3NywibG5nIjotMTA5LjgzMzM4MjQ4NTA0ODgzfSx7ImxhdCI6MjIuOTEwNDQzNzI3ODMzMDI3LCJsbmciOi0xMDkuODMyNjk1ODM5NTQxMDJ9LHsibGF0IjoyMi45MTc1MTk0MDMxNzM4NjMsImxuZyI6LTEwOS44MjU0NDMxNDYzNjQ3NX1d&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#1a5a3a,#2d9a6b);">🌊</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Cabo del Sol</p>
+          <p class="neighborhood-card-tagline">Beachfront golf community with Jack Nicklaus & Tom Weiskopf courses</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi44NzE3NTk2MjY3OTU5NTMsImxuZyI6LTEwOS45NDc0OTkwNzQ4MDI0OH0seyJsYXQiOjIyLjg4MzAyODQwNTQ4NTExMywibG5nIjotMTA5Ljk0NzAyNzAwNjAxNTg2fSx7ImxhdCI6MjIuODgzMjY1NjMyODc5MzI2LCJsbmciOi0xMDkuOTQ3MDY5OTIxMzYwMX0seyJsYXQiOjIyLjg5Nzg1NDMyMDc1MDUyMiwibG5nIjotMTA5Ljk1Nzg4NDU4ODEwODE0fSx7ImxhdCI6MjIuODk3ODkzODU0MzU4ODg0LCJsbmciOi0xMDkuOTU4MDEzMzM0MTQwODZ9LHsibGF0IjoyMi44OTQ2NTIwNjAyMTA3MjQsImxuZyI6LTEwOS45NjI1NjIzNjA2MzAxMn0seyJsYXQiOjIyLjg5NDQ1NDM4NzMzMDExOCwibG5nIjotMTA5Ljk2MjYwNTI3NTk3NDM1fSx7ImxhdCI6MjIuODc0ODgzMzQ2ODUxNDIsImxuZyI6LTEwOS45NjAxNTkxMDEzNTI3N30seyJsYXQiOjIyLjg3NDg0MzgwNjU0MDE4OCwibG5nIjotMTA5Ljk2MDE1OTEwMTM1Mjc3fSx7ImxhdCI6MjIuODcxNzU5NjI2Nzk1OTUzLCJsbmciOi0xMDkuOTQ3MjQxNTgyNzM3MDV9XQ%3D%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#6b1a1a,#9a3a2d);">🏖️</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Quivira</p>
+          <p class="neighborhood-card-tagline">Dramatic Pacific cliffs, luxury resort living & Greg Norman golf</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi44NzM1MTA0MTIzNzAxOTgsImxuZyI6LTEwOS45NzE1MzIxNjI2MzIwN30seyJsYXQiOjIyLjg4MjEzMDAxMjUzMTIsImxuZyI6LTEwOS45Njg2MTM5MTkyMjM4N30seyJsYXQiOjIyLjg4MjUyNTM5MzkwNzgzLCJsbmciOi0xMDkuOTY4NDQyMjU3ODQ2OTJ9LHsibGF0IjoyMi45MDA1NTM1NjA5NDY4NDMsImxuZyI6LTEwOS45NjU3ODE1MDY1MDQxNH0seyJsYXQiOjIyLjkwMDYzMjYyNjU3ODY4LCJsbmciOi0xMDkuOTY1NzgxNTA2NTA0MTR9LHsibGF0IjoyMi45MDQ1ODU4NDk0MDM1NjcsImxuZyI6LTEwOS45NzMzMzQ2MDcwOTAwOH0seyJsYXQiOjIyLjkwNDgyMzAzOTEwODU3LCJsbmciOi0xMDkuOTczODQ5NTkxMjIwOTR9LHsibGF0IjoyMi45MDgzMDE3NzM3ODI5MzgsImxuZyI6LTEwOS45ODY4MTAwMjUxODA5fSx7ImxhdCI6MjIuOTA3ODI3NDA2MTI4MTksImxuZyI6LTEwOS45ODczMjUwMDkzMTE3Nn0seyJsYXQiOjIyLjg4NTUzMDI1NDczNjYxLCJsbmciOi0xMDkuOTk0MDE5ODAzMDEyOTN9LHsibGF0IjoyMi44ODUyOTMwMzEzMDAxMDgsImxuZyI6LTEwOS45OTQwMTk4MDMwMTI5M30seyJsYXQiOjIyLjg3NjkxMDg3MDQ0NDY3LCJsbmciOi0xMDkuOTgxNDAyNjkxODA2ODh9LHsibGF0IjoyMi44NzY3NTI3MTE0OTIwODgsImxuZyI6LTEwOS45ODExNDUxOTk3NDE0NX0seyJsYXQiOjIyLjg3MzI3MzE2NzkzMTc5MiwibG5nIjotMTA5Ljk3MDg0NTUxNzEyNDI2fV0%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#1a3a6b,#2d5a9a);">💎</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Diamante</p>
+          <p class="neighborhood-card-tagline">Ultra-luxury private community with Davis Love III signature course</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMy4wNTY4NTQ3MzM3ODAzNTUsImxuZyI6LTEwOS42NjczMDcxNzM3Nzg2fSx7ImxhdCI6MjMuMDMxODk2NTU4NzUyMjk3LCJsbmciOi0xMDkuNjkyNjI3MjI2ODc5MTh9LHsibGF0IjoyMy4wMzE0MjI2MjQ2MTk4OSwibG5nIjotMTA5LjY5MzE0MjIxMTAxMDA0fSx7ImxhdCI6MjMuMDIxMTUzNjQyNTU1NjgsImxuZyI6LTEwOS43MTI3OTc0Mzg2NzExN30seyJsYXQiOjIzLjAyMTE1MzY0MjU1NTY4LCJsbmciOi0xMDkuNzEyNTM5OTQ2NjA1NzR9LHsibGF0IjoyMy4wMjc1NTIxMDAxNTk1NTQsImxuZyI6LTEwOS43MTE3Njc0NzA0MDk0Nn0seyJsYXQiOjIzLjAyNzcxMDA4MjkyNTQxMywibG5nIjotMTA5LjcxMTg1MzMwMTA5NzkzfSx7ImxhdCI6MjMuMDM5ODc0MTk5ODA1NjY2LCJsbmciOi0xMDkuNzI0NjQyMDczNjgwOTR9LHsibGF0IjoyMy4wNDAxOTAxMzYyNjIyOTcsImxuZyI6LTEwOS43MjQ3Mjc5MDQzNjk0Mn0seyJsYXQiOjIzLjA2NTM4MzY4MjMwNTAwOCwibG5nIjotMTA5LjY5ODk3ODY5NzgyNjQ1fSx7ImxhdCI6MjMuMDY1NDYyNjUxNTI0OTMyLCJsbmciOi0xMDkuNjk4ODA3MDM2NDQ5NX0seyJsYXQiOjIzLjA2ODA2ODYwOTc4MSwibG5nIjotMTA5LjY2OTI4MTI3OTYxMzU2fSx7ImxhdCI6MjMuMDY3OTEwNjc0MzUzODQzLCJsbmciOi0xMDkuNjY4NTk0NjM0MTA1NzR9LHsibGF0IjoyMy4wNTcwMTI2ODIxODM0MDUsImxuZyI6LTEwOS42NjczMDcxNzM3Nzg2fV0%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#3a1a6b,#7a3a9a);">🌺</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">San José del Cabo</p>
+          <p class="neighborhood-card-tagline">Historic art district, colonial charm & the best local food scene</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMy4wNTI5MDU5NjM0NzI3ODUsImxuZyI6LTEwOS42NTQ1MTg0MDExOTU1OX0seyJsYXQiOjIzLjA2NTYyMDU4OTgyNTc1LCJsbmciOi0xMDkuNjY1NzYyMjIxMzg2MDJ9LHsibGF0IjoyMy4wNjU2OTk1NTg5MDY2MywibG5nIjotMTA5LjY2NTg0ODA1MjA3NDV9LHsibGF0IjoyMy4wNzg1NzA4OTk1MjE0NiwibG5nIjotMTA5LjY2MzcwMjI4NDg2MjU4fSx7ImxhdCI6MjMuMDc4OTY1NzA2NDQ5MDUsImxuZyI6LTEwOS42NjMzNTg5NjIxMDg2N30seyJsYXQiOjIzLjA4NTM2MTQxNzE2NTAwNCwibG5nIjotMTA5LjYzNjkyMzExMDA1Nzl9LHsibGF0IjoyMy4wODUzNjE0MTcxNjUwMDQsImxuZyI6LTEwOS42MzY2NjU2MTc5OTI0Nn0seyJsYXQiOjIzLjA3MzQzODMwMzk4MjI4NiwibG5nIjotMTA5LjYyMzUzMzUyMjY1NTU1fSx7ImxhdCI6MjMuMDcyODA2NTg2Mzc4MjYsImxuZyI6LTEwOS42MjMzNjE4NjEyNzg2fSx7ImxhdCI6MjMuMDY1ODU3NDk2OTI5MzUsImxuZyI6LTEwOS42MjczMTAwNzI5NDg1Mn0seyJsYXQiOjIzLjA2NTA2NzgwNDk2MTg0MiwibG5nIjotMTA5LjYyODQyNTg3MTg5ODcxfSx7ImxhdCI6MjMuMDUzNDU4Nzk4Mjg4NSwibG5nIjotMTA5LjY1NDYwNDIzMTg4NDA2fV0%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#1a5a4a,#2d8a7a);">⚓</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Puerto Los Cabos</p>
+          <p class="neighborhood-card-tagline">Master-planned marina community with world-class sportfishing access</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi44ODgwNjM0OTAyNTEwMywibG5nIjotMTA5Ljk0OTYyMTU2OTI2MzY3fSx7ImxhdCI6MjIuODgxNDIxMjAxMjgxNzgyLCJsbmciOi0xMDkuOTA5NDUyODA3MDU2NjR9LHsibGF0IjoyMi44ODE0MjEyMDEyODE3ODIsImxuZyI6LTEwOS45MDkyODExNDU2Nzk2OX0seyJsYXQiOjIyLjg3MTI5ODk5MzE3Mzc2NywibG5nIjotMTA5LjkwMjU4NjM1MTk3ODUxfSx7ImxhdCI6MjIuODcxMjk4OTkzMTczNzY3LCJsbmciOi0xMDkuOTAyMjQzMDI5MjI0Nn0seyJsYXQiOjIyLjkwMTk3OTYxMjk2MjQ4LCJsbmciOi0xMDkuODQxNDc0OTAxNzgzMn0seyJsYXQiOjIyLjkwMjEzNzc0MjUxNzQ0LCJsbmciOi0xMDkuODQxMzAzMjQwNDA2MjV9LHsibGF0IjoyMi45MzU0OTg5NTM0NTc4NjMsImxuZyI6LTEwOS44Nzc1MjM3OTA5NDMzNn0seyJsYXQiOjIyLjkzNTQ5ODk1MzQ1Nzg2MywibG5nIjotMTA5Ljg3Nzg2NzExMzY5NzI2fSx7ImxhdCI6MjIuODg3MjcyNzU4NjA4ODEsImxuZyI6LTEwOS45NDk3OTMyMzA2NDA2Mn1d&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#4a2a1a,#8a5a2d);">🍹</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Cabo San Lucas</p>
+          <p class="neighborhood-card-tagline">The iconic marina, nightlife & Land's End — Cabo at its most vibrant</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+      <a class="neighborhood-card" href="https://sebastian.findmexicohouses.com/results-gallery/?photo=1&polygon=W3sibGF0IjoyMi45NzMwNjgzMjIzNDQ0MiwibG5nIjotMTA5LjczNjkwNjY3NTYyNzY3fSx7ImxhdCI6MjMuMDAwNDA3NjI0NzIzMDQsImxuZyI6LTEwOS43NjMzNDI1Mjc2Nzg0NX0seyJsYXQiOjIzLjAwMDg4MTY2Nzg1MDk0NCwibG5nIjotMTA5Ljc2NDU0NDE1NzMxNzEyfSx7ImxhdCI6MjIuOTg4NTU2MDA1NTE4MzI2LCJsbmciOi0xMDkuODI0MTEwNjU1MTE5ODV9LHsibGF0IjoyMi45ODgyMzk5NDgwOTk2NjgsImxuZyI6LTEwOS44MjQ0NTM5Nzc4NzM3Nn0seyJsYXQiOjIyLjk2ODY0Mjk0Mzk1ODY4OCwibG5nIjotMTA5LjgzNjk4NTI1ODM5MTM0fSx7ImxhdCI6MjIuOTY4MzI2ODM5OTU4NzUsImxuZyI6LTEwOS44MzcxNTY5MTk3NjgyOX0seyJsYXQiOjIyLjkyNDM4MTE5NTc0MDY1OCwibG5nIjotMTA5LjgzMjM1MDQwMTIxMzZ9LHsibGF0IjoyMi45MjQyMjMwOTIxMzIwNzQsImxuZyI6LTEwOS44MzIzNTA0MDEyMTM2fSx7ImxhdCI6MjIuOTMxNjUzNzYyMjY1NTEsImxuZyI6LTEwOS43OTMyMTE2MDcyNjgyOX0seyJsYXQiOjIyLjkzMjYwMjMyOTExMDc5LCJsbmciOi0xMDkuNzkxMTUxNjcwNzQ0ODV9LHsibGF0IjoyMi45NzM3MDA1MDc0MjkxNiwibG5nIjotMTA5LjczNjM5MTY5MTQ5Njh9XQ%3D%3D&sort=importdate&status=A" target="_blank" rel="noopener">
+        <div class="neighborhood-card-img-placeholder" style="background:linear-gradient(135deg,#1a4a3a,#2d7a5a);">🌅</div>
+        <div class="neighborhood-card-body">
+          <p class="neighborhood-card-name">Los Cabos Corridor</p>
+          <p class="neighborhood-card-tagline">30km of coast connecting both cities — resorts, beaches & golf</p>
+          <span class="neighborhood-card-cta">View listings</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- FEATURED PROPERTY (rotates randomly on each page load) -->
+    <p class="featured-section-label">Featured listing</p>
+    <div class="featured-property-wrap" id="featured-property-wrap">
+      <div class="featured-property-img-placeholder" id="featured-img-placeholder">🏡</div>
+      <div class="featured-property-content">
+        <span class="featured-badge">Featured Property</span>
+        <p class="featured-property-price" id="featured-price">Loading...</p>
+        <p class="featured-property-area" id="featured-area"></p>
+        <p class="featured-property-details" id="featured-details"></p>
+        <a href="#" class="featured-property-btn" id="featured-btn" target="_blank" rel="noopener">View property →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+// ============================================================
+// FEATURED PROPERTIES — Edit this list to update featured listings
+// Add as many as you want. One will be picked randomly each load.
+// photo: use a direct image URL or leave "" to show placeholder
+// ============================================================
+var featuredProperties = [
+  {
+    price: "$1,250,000",
+    area: "Palmilla, Los Cabos Corridor",
+    details: "3 bed · 3.5 bath · Ocean view · Furnished",
+    url: "https://sebastian.findmexicohouses.com",
+    photo: ""
+  },
+  {
+    price: "$875,000",
+    area: "Pedregal, Cabo San Lucas",
+    details: "2 bed · 2 bath · Marina & Pacific views · Gated community",
+    url: "https://sebastian.findmexicohouses.com",
+    photo: ""
+  },
+  {
+    price: "$2,100,000",
+    area: "Diamante, Cabo San Lucas",
+    details: "4 bed · 4.5 bath · Golf course view · Private pool",
+    url: "https://sebastian.findmexicohouses.com",
+    photo: ""
+  }
+];
+
+(function() {
+  var prop = featuredProperties[Math.floor(Math.random() * featuredProperties.length)];
+  document.getElementById('featured-price').textContent = prop.price;
+  document.getElementById('featured-area').textContent = prop.area;
+  document.getElementById('featured-details').textContent = prop.details;
+  document.getElementById('featured-btn').href = prop.url;
+  if (prop.photo) {
+    var wrap = document.getElementById('featured-property-wrap');
+    var placeholder = document.getElementById('featured-img-placeholder');
+    var img = document.createElement('img');
+    img.src = prop.photo;
+    img.className = 'featured-property-img';
+    img.alt = prop.area + ' property';
+    wrap.insertBefore(img, wrap.firstChild);
+    placeholder.parentNode.removeChild(placeholder);
+  }
+})();
+</script>
