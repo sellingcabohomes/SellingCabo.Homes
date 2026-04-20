@@ -2,6 +2,7 @@
   {% include schema-realestate-agent.html %}
 {% endif %}
 
-{% if page.url contains "/blog/about/" %}
+{% assign about_url = page.url | downcase %}
+{% if about_url contains "about" %}
   {% include schema-person.html %}
 {% endif %}
