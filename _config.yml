@@ -102,8 +102,8 @@ og_image                 : "/assets/Images/cabo_beach.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : "Person"
-  name                   : "Sebastian Dee"
+  type: "Organization"
+  name: "SellingCabo.Homes"
   links: 
     - "https://facebook.com/sebastiandeehomes"
     - "https://instagram.com/sebastiandeehomes"
