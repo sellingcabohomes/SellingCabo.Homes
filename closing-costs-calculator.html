@@ -136,7 +136,7 @@ layout: null
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -157,7 +157,8 @@ layout: null
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
             background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
             background-attachment: fixed;
             color: var(--white);
@@ -191,7 +192,7 @@ layout: null
             margin-bottom: 20px;
         }
         .hero-lead {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--white-85);
             max-width: 700px;
             margin: 0 auto 15px;
@@ -201,6 +202,41 @@ layout: null
             font-size: 0.9rem;
             color: var(--white-60);
             font-style: italic;
+        }
+
+        /* ===================== AUTHOR BAR ===================== */
+        .author-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(205,155,55,0.2);
+            border-radius: 12px;
+            padding: 12px 20px;
+            margin-bottom: 30px;
+        }
+        .author-bar-photo {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid rgba(205,155,55,0.4);
+        }
+        .author-bar-text {
+            font-size: 0.85rem;
+            color: var(--white-60);
+            white-space: nowrap;
+        }
+        .author-bar-logo {
+            width: 80px;
+            flex-shrink: 0;
+            filter: brightness(0) invert(1) opacity(0.7);
+        }
+        @media (max-width: 500px) {
+            .author-bar-text { white-space: normal; text-align: center; }
+            .author-bar-logo { display: none; }
         }
 
         /* ===================== QUICK STATS ===================== */
@@ -267,7 +303,7 @@ layout: null
             background: var(--white-10);
             color: var(--white);
             font-size: 1rem;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             transition: border-color 0.2s;
         }
         .input-group input:focus, .input-group select:focus {
@@ -389,7 +425,7 @@ layout: null
         }
         .section-title span { color: var(--gold); }
         .prose {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--white-85);
             line-height: 1.8;
             margin-bottom: 18px;
@@ -403,7 +439,7 @@ layout: null
             width: 100%;
             border-collapse: collapse;
             margin: 25px 0;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
         .cost-table th {
             background: var(--gold-20);
@@ -501,7 +537,7 @@ layout: null
             background: none;
             border: none;
             color: var(--white);
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1rem;
             font-weight: 600;
             text-align: left;
@@ -578,7 +614,7 @@ layout: null
             max-width: 82%;
             padding: 12px 16px;
             border-radius: 12px;
-            font-size: 0.92rem;
+            font-size: 1rem;
             line-height: 1.6;
             animation: fadeUp 0.3s ease;
         }
@@ -635,7 +671,7 @@ layout: null
             border-radius: 8px;
             padding: 11px 15px;
             color: var(--white);
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 0.9rem;
         }
         .chat-input::placeholder { color: var(--white-60); }
@@ -646,7 +682,7 @@ layout: null
             border: none;
             border-radius: 8px;
             padding: 11px 20px;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-weight: 700;
             font-size: 0.9rem;
             cursor: pointer;
@@ -677,7 +713,7 @@ layout: null
             color: var(--gold);
             cursor: pointer;
             transition: all 0.2s;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         .quick-q:hover { background: var(--gold-10); border-color: var(--gold); }
 
@@ -710,7 +746,7 @@ layout: null
             color: var(--navy);
             padding: 18px 40px;
             border-radius: 50px;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1.05rem;
             font-weight: 700;
             text-decoration: none;
@@ -854,7 +890,7 @@ layout: null
             background: var(--white-10);
             color: var(--white);
             font-size: 1rem;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             transition: border-color 0.2s;
             outline: none;
         }
@@ -878,7 +914,7 @@ layout: null
             border-right: 1px solid var(--gold-30);
             color: var(--white);
             font-size: 0.92rem;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             outline: none;
             cursor: pointer;
             appearance: none;
@@ -897,7 +933,7 @@ layout: null
             border: none;
             color: var(--white);
             font-size: 1rem;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             outline: none;
         }
         .intake-phone-row input[type="tel"]::placeholder { color: var(--white-60); }
@@ -925,7 +961,7 @@ layout: null
             border-radius: 10px;
             cursor: pointer;
             transition: background 0.2s, border-color 0.2s;
-            font-size: 0.93rem;
+            font-size: 1rem;
             color: var(--white-85);
             line-height: 1.4;
             user-select: none;
@@ -968,7 +1004,7 @@ layout: null
             color: var(--gold);
             padding: 11px 22px;
             border-radius: 50px;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
@@ -983,7 +1019,7 @@ layout: null
             color: var(--navy);
             padding: 11px 28px;
             border-radius: 50px;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 0.9rem;
             font-weight: 700;
             cursor: pointer;
@@ -1032,7 +1068,7 @@ layout: null
             color: var(--navy);
             padding: 14px 32px;
             border-radius: 50px;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1rem;
             font-weight: 700;
             text-decoration: none;
@@ -1068,6 +1104,13 @@ layout: null
             No surprises. No guesswork. Just real numbers.
         </p>
         <p class="hero-note">Results update instantly as you type · All amounts in USD</p>
+    </div>
+
+    <!-- ===== AUTHOR BAR ===== -->
+    <div class="author-bar">
+        <img class="author-bar-photo" src="/assets/Images/sebastian-dee.png" alt="Sebastian Dee">
+        <span class="author-bar-text">Built by Sebastian Dee &middot; Licensed Agent &middot; Ronival Real Estate</span>
+        <img class="author-bar-logo" src="/assets/Images/Logo_Ronival_Blue_sin_BG.png" alt="Ronival Real Estate">
     </div>
 
     <!-- ===== QUICK STATS ===== -->
