@@ -2041,6 +2041,7 @@ CONVERSATION RULES:
 
     let chatHistory = [];
     let isTyping = false;
+    let botMessageCount = 0;
 
     function scrollToBottom() {
         const msgs = document.getElementById('chatMessages');
@@ -2095,7 +2096,7 @@ CONVERSATION RULES:
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    model: 'claude-haiku-4-5-20251001',
+                    model: 'claude-sonnet-4-5-20251001',
                     max_tokens: 500,
                     system: SYSTEM_PROMPT,
                     messages: chatHistory
@@ -2105,8 +2106,13 @@ CONVERSATION RULES:
             const data = await response.json();
             const reply = data.content?.[0]?.text || "I'm having trouble connecting right now. Please try again or contact Sebastian directly at sdelapena@ronival.com";
 
+            botMessageCount++;
             hideTyping();
-            addMessage(reply, 'bot');
+            let displayReply = reply;
+            if (botMessageCount === 2) {
+                displayReply += '\n\n---\n💬 Want to discuss your specific situation? <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" style="color: #cd9b37; text-decoration: underline;">Book a free 30-minute strategy call with Sebastian here</a>';
+            }
+            addMessage(displayReply, 'bot');
             chatHistory.push({ role: 'assistant', content: reply });
 
         } catch (err) {
