@@ -1715,31 +1715,34 @@ layout: null
 
         el('intakeTyName').textContent = 'Thanks, ' + nameVal.split(' ')[0] + '!';
 
-        if (!window.ml) {
-            (function (w, d, e, u, f, l, n) {
-                w[f] = w[f] || function () { (w[f].q = w[f].q || []).push(arguments); };
-                l = d.createElement(e); l.async = 1; l.src = u;
-                n = d.getElementsByTagName(e)[0]; n.parentNode.insertBefore(l, n);
-            })(window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
-            ml('account', '1790390');
-        }
-
-        setTimeout(function () {
-            ml('subscribe', {
-                fields: {
-                    name: nameVal,
-                    phone: phoneVal,
-                    location_preference: areas,
-                    budget: budget,
-                    goal: goal,
-                    financing: financing,
-                    buying_process_knowledge: process,
-                    timeline: timeline
-                },
-                groups: ['185332828800550031'],
-                callback: function (response) { console.log('MailerLite response:', response); }
-            }, emailVal);
-        }, 1000);
+        var firstName = nameVal.split(' ')[0];
+        fetch('https://anthropic-proxy.sedelap.workers.dev/email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                from: 'Sebastian Dee <sebastiandee@sellingcabo.homes>',
+                to: emailVal,
+                subject: 'Your Cabo property search just got easier, ' + firstName,
+                html: '<div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #1a1a2e; padding: 20px;">' +
+                    '<img src="https://sellingcabo.homes/assets/Images/sellingcabo.homes_black.png" alt="SellingCabo.Homes" style="width: 180px; margin-bottom: 24px;" />' +
+                    '<p style="font-size: 16px; line-height: 1.7;">Hi ' + firstName + ',</p>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">Thanks for taking the time to answer those questions — I read every single response personally.</p>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">Based on what you shared, I\'m already thinking about a few properties that could be a strong fit. I\'ll have something in your inbox within 48 hours.</p>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">In the meantime, a few things that might be useful:</p>' +
+                    '<ul style="font-size: 16px; line-height: 2;">' +
+                    '<li><a href="https://sellingcabo.homes/closing-costs-calculator" style="color: #cd9b37;">Los Cabos Closing Costs Calculator</a></li>' +
+                    '<li><a href="https://sellingcabo.homes/blog/fideicomiso-explained/" style="color: #cd9b37;">How the Fideicomiso Works</a></li>' +
+                    '<li><a href="https://sellingcabo.homes/blog/los-cabos-buyers-guide/" style="color: #cd9b37;">Los Cabos Buyer\'s Guide</a></li>' +
+                    '</ul>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">If you want to skip the wait and talk now, you can <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" style="color: #cd9b37;">book a free 30-minute strategy call here</a>.</p>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">Talk soon,<br/>' +
+                    '<strong>Sebastian De la Peña</strong><br/>' +
+                    'Los Cabos Real Estate Specialist | Ronival Real Estate<br/>' +
+                    '📱 +52 624 119 4526<br/>' +
+                    '🌐 <a href="https://sellingcabo.homes" style="color: #cd9b37;">sellingcabo.homes</a></p>' +
+                    '</div>'
+            })
+        }).catch(function (err) { console.error('Email send error:', err); });
     }
 
     window.intakeNext = function () {
