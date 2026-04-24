@@ -616,6 +616,8 @@ layout: null
             border-radius: 12px;
             font-size: 1rem;
             line-height: 1.6;
+            word-break: break-all;
+            overflow-wrap: break-word;
             animation: fadeUp 0.3s ease;
         }
         @keyframes fadeUp {
@@ -2123,11 +2125,12 @@ CONVERSATION RULES:
 
             botResponseCount++;
             hideTyping();
-            let displayReply = reply;
+            addMessage(reply, 'bot');
             if (botResponseCount > 1) {
-                displayReply += '<hr style="border-color: rgba(255,255,255,0.1); margin: 12px 0;"><p style="margin:0; font-size: 0.9rem;">📅 <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" style="color: #cd9b37; text-decoration: underline;">Book a free 30-minute strategy call with Sebastian</a></p>';
+                const allBotMsgs = document.getElementById('chatMessages').querySelectorAll('.msg-bot');
+                allBotMsgs[allBotMsgs.length - 1].innerHTML +=
+                    '<hr style="border-color:rgba(255,255,255,0.1);margin:12px 0;"><p style="margin:0;font-size:0.9rem;">📅 <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" style="color:#cd9b37;text-decoration:underline;">Book a free 30-minute strategy call with Sebastian</a></p>';
             }
-            addMessage(displayReply, 'bot');
             chatHistory.push({ role: 'assistant', content: reply });
 
         } catch (err) {
