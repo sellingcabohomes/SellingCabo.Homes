@@ -2038,8 +2038,8 @@ CONVERSATION RULES:
 8. You represent Sebastian's brand: honest, educational, no pressure
 9. Keep responses concise - 3-5 sentences unless a complex question needs more
 10. You are NOT a lawyer or financial advisor — always recommend they confirm specifics with their closing attorney
-11. LINKS: Never write raw URLs or HTML tags. Always use markdown link format like this: [descriptive text](url). For example: [View Available Properties](https://url.com) or [Book a free call](https://url.com)
-12. PROPERTY SEARCH: When a user asks to see properties or available listings in any area, respond with: 'You can browse current listings here: [View Available Properties in Los Cabos](https://sebastian.findmexicohouses.com/results-map/?photo=1&sort=importdate&status=A&utm_source=AGENTMACHINE&utm_campaign=Calculator&mdv=2&mpv=2&utm_medium=referral) — Sebastian can also send you a curated shortlist if you [book a free 30-minute call](https://calendar.app.google/ChU58Ut1McPQZhQ1A).'`;
+11. PROPERTY SEARCH: When a user asks to see properties or listings in any area, share this URL: https://sebastian.findmexicohouses.com/results-map/?photo=1&sort=importdate&status=A&utm_source=AGENTMACHINE&utm_campaign=Calculator&mdv=2&mpv=2&utm_medium=referral and mention Sebastian can provide a curated shortlist on a call.
+12. BOOKING: When sharing the calendar link use this URL: https://calendar.app.google/ChU58Ut1McPQZhQ1A`;
 
     let chatHistory = [];
     let isTyping = false;
@@ -2059,6 +2059,10 @@ CONVERSATION RULES:
             .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,
                 '<a href="$2" target="_blank" style="color:#cd9b37;text-decoration:underline;">$1</a>')
             .replace(/\n/g, '<br>');
+        formattedText = formattedText.replace(
+            /(https?:\/\/[^\s<"]+)"\s*target="_blank"[^>]*>([^<]*)/g,
+            '<a href="$1" target="_blank" style="color:#cd9b37;text-decoration:underline;">$2</a>'
+        );
         formattedText = formattedText.replace(
             /(https?:\/\/[^\s<"]+)/g,
             '<a href="$1" target="_blank" style="color:#cd9b37;text-decoration:underline;">$1</a>'
