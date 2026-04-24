@@ -67,7 +67,7 @@ Look, I've seen enough buyers make the same expensive mistakes that I could writ
 
 2. **Not understanding the legal framework.** Mexico isn't trying to rip you off - the fideicomiso trust system and closing costs are there to protect your investment property. But if you don't understand them, you'll make bad decisions. I make sure you know exactly what you're getting into.
 
-3. **Underestimating true costs.** Those closing costs everyone complains about in Mexico real estate? They're tax deductible when you sell, and your property taxes will be way lower than the US or Canada. <a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">I show you the real numbers</a> for your Los Cabos investment property, not just the purchase price.
+3. **Underestimating true costs.** Those closing costs everyone complains about in Mexico real estate? They're tax deductible when you sell, and your property taxes will be way lower than the US or Canada. <a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">I show you the real numbers</a> for your Los Cabos investment property, not just the purchase price.
 
 4. **Not knowing the towns.** Cabo San Lucas nightlife versus San José del Cabo charm versus Corridor luxury in areas like Cabo del Sol, Palmilla and Chileno Bay - they're completely different experiences. I help you figure out where you actually want to live in Los Cabos.
 

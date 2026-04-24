@@ -87,7 +87,7 @@ Those government certificates, permits or bank trust set up are fixed peso amoun
 
 So while a $400K buyer might pay 8% in closing costs, a $2M buyer might only pay 5%.
 
-<a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Calculate your specific percentage here</a> based on your target price range.
+<a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">Calculate your specific percentage here</a> based on your target price range.
 
 
 ## Why These Costs Are So Much Higher (It's Not What You Think)
@@ -128,7 +128,7 @@ Here's exactly what goes into those closing costs:
 
 *Note: Peso amounts fluctuate with exchange rates*
 
-Want to see exactly what YOUR Los Cabos closing costs will be? <a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Try our free Los Cabos closing cost calculator</a> to get your personalized estimate in seconds.
+Want to see exactly what YOUR Los Cabos closing costs will be? <a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">Try our free Los Cabos closing cost calculator</a> to get your personalized estimate in seconds.
 
 ## The Tax Advantage That Changes Everything
 
@@ -187,7 +187,7 @@ But you're saving $4K-$19K per year in property taxes compared to home.
 
 The <a href="/blog/history-of-fideicomiso-mexico-property-law/">fideicomiso</a> fee is less than what you'd pay in property taxes for just one month back home.
 
-<a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Calculate how much you'll actually save</a> when you factor in the tax advantages.
+<a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">Calculate how much you'll actually save</a> when you factor in the tax advantages.
 
 ## The Costly Mistakes I See Buyers Make
 
@@ -233,7 +233,7 @@ You have two choices:
 
 **Option 2:** Work with someone who's already done the hard work. Someone who knows every cost, every process, every potential pitfall.
 
-Someone who can <a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">show you exactly what you'll pay</a> before you fall in love with a property.
+Someone who can <a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">show you exactly what you'll pay</a> before you fall in love with a property.
 
 The choice is yours.
 
@@ -241,7 +241,7 @@ The choice is yours.
 
 If you're serious about Los Cabos ownership, you need to understand these costs.
 
-<a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Use our closing cost calculator</a> to see your real numbers based on your budget.
+<a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">Use our closing cost calculator</a> to see your real numbers based on your budget.
 
 It takes 30 seconds and could save you thousands in surprises.
 
@@ -271,7 +271,7 @@ Whether you're just beginning to explore, actively researching, or ready to star
 
 ---
 
-**P.S.** Remember, Los Cabos closing costs aren't like back home. They're higher, more complex, and full of surprises if you're not prepared. <a href="https://calculator.sellingcabo.homes/los-cabos-closing-costs-calculator" target="_blank">Get your personalized estimate here</a> so you can budget properly and focus on finding your perfect piece of paradise instead of scrambling for extra funds at closing.
+**P.S.** Remember, Los Cabos closing costs aren't like back home. They're higher, more complex, and full of surprises if you're not prepared. <a href="https://sellingcabo.homes/closing-costs-calculator" target="_blank">Get your personalized estimate here</a> so you can budget properly and focus on finding your perfect piece of paradise instead of scrambling for extra funds at closing.
 
 ---
 <br>
