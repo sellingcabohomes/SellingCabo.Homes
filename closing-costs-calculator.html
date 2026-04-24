@@ -2037,7 +2037,9 @@ CONVERSATION RULES:
 7. Never make up specific property prices or guarantee investment returns
 8. You represent Sebastian's brand: honest, educational, no pressure
 9. Keep responses concise - 3-5 sentences unless a complex question needs more
-10. You are NOT a lawyer or financial advisor — always recommend they confirm specifics with their closing attorney`;
+10. You are NOT a lawyer or financial advisor — always recommend they confirm specifics with their closing attorney
+11. LINKS: Whenever you include a URL in your response, always wrap it in descriptive text like '<a href="URL" target="_blank" style="color:#cd9b37;text-decoration:underline;">click here</a>' or 'Search available properties here'. Never paste raw URLs.
+12. PROPERTY SEARCH: When a user asks to see properties, search listings, browse homes, or asks about available properties in any area of Los Cabos, always respond with something like: 'You can browse current listings here: <a href="https://sebastian.findmexicohouses.com/results-map/?photo=1&sort=importdate&status=A&utm_source=AGENTMACHINE&utm_campaign=Calculator&mdv=2&mpv=2&utm_medium=referral" target="_blank" style="color:#cd9b37;text-decoration:underline;">View Available Properties in Los Cabos</a> — this shows all active listings. Sebastian can also send you a curated shortlist based on your specific criteria if you book a call.'`;
 
     let chatHistory = [];
     let isTyping = false;
@@ -2052,7 +2054,14 @@ CONVERSATION RULES:
         const msgs = document.getElementById('chatMessages');
         const div = document.createElement('div');
         div.className = 'msg ' + (role === 'user' ? 'msg-user' : 'msg-bot');
-        div.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+        let formattedText = text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n/g, '<br>');
+        formattedText = formattedText.replace(
+            /(https?:\/\/[^\s<"]+)/g,
+            '<a href="$1" target="_blank" style="color:#cd9b37;text-decoration:underline;">$1</a>'
+        );
+        div.innerHTML = formattedText;
         msgs.appendChild(div);
         scrollToBottom();
     }
