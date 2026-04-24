@@ -2041,7 +2041,7 @@ CONVERSATION RULES:
 
     let chatHistory = [];
     let isTyping = false;
-    let botMessageCount = 0;
+    let botResponseCount = 0;
 
     function scrollToBottom() {
         const msgs = document.getElementById('chatMessages');
@@ -2106,11 +2106,11 @@ CONVERSATION RULES:
             const data = await response.json();
             const reply = data.content?.[0]?.text || "I'm having trouble connecting right now. Please try again or contact Sebastian directly at sdelapena@ronival.com";
 
-            botMessageCount++;
+            botResponseCount++;
             hideTyping();
             let displayReply = reply;
-            if (botMessageCount === 2) {
-                displayReply += '\n\n---\n💬 Want to discuss your specific situation? <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" style="color: #cd9b37; text-decoration: underline;">Book a free 30-minute strategy call with Sebastian here</a>';
+            if (botResponseCount > 1) {
+                displayReply += '<hr style="border-color: rgba(255,255,255,0.1); margin: 12px 0;"><p style="margin:0; font-size: 0.9rem;">📅 <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" style="color: #cd9b37; text-decoration: underline;">Book a free 30-minute strategy call with Sebastian</a></p>';
             }
             addMessage(displayReply, 'bot');
             chatHistory.push({ role: 'assistant', content: reply });
