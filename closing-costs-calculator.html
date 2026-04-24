@@ -2038,8 +2038,8 @@ CONVERSATION RULES:
 8. You represent Sebastian's brand: honest, educational, no pressure
 9. Keep responses concise - 3-5 sentences unless a complex question needs more
 10. You are NOT a lawyer or financial advisor — always recommend they confirm specifics with their closing attorney
-11. LINKS: Whenever you include a URL in your response, always wrap it in descriptive text like '<a href="URL" target="_blank" style="color:#cd9b37;text-decoration:underline;">click here</a>' or 'Search available properties here'. Never paste raw URLs.
-12. PROPERTY SEARCH: When a user asks to see properties, search listings, browse homes, or asks about available properties in any area of Los Cabos, always respond with something like: 'You can browse current listings here: <a href="https://sebastian.findmexicohouses.com/results-map/?photo=1&sort=importdate&status=A&utm_source=AGENTMACHINE&utm_campaign=Calculator&mdv=2&mpv=2&utm_medium=referral" target="_blank" style="color:#cd9b37;text-decoration:underline;">View Available Properties in Los Cabos</a> — this shows all active listings. Sebastian can also send you a curated shortlist based on your specific criteria if you book a call.'`;
+11. LINKS: Never write raw URLs or HTML tags. Always use markdown link format like this: [descriptive text](url). For example: [View Available Properties](https://url.com) or [Book a free call](https://url.com)
+12. PROPERTY SEARCH: When a user asks to see properties or available listings in any area, respond with: 'You can browse current listings here: [View Available Properties in Los Cabos](https://sebastian.findmexicohouses.com/results-map/?photo=1&sort=importdate&status=A&utm_source=AGENTMACHINE&utm_campaign=Calculator&mdv=2&mpv=2&utm_medium=referral) — Sebastian can also send you a curated shortlist if you [book a free 30-minute call](https://calendar.app.google/ChU58Ut1McPQZhQ1A).'`;
 
     let chatHistory = [];
     let isTyping = false;
@@ -2056,6 +2056,8 @@ CONVERSATION RULES:
         div.className = 'msg ' + (role === 'user' ? 'msg-user' : 'msg-bot');
         let formattedText = text
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,
+                '<a href="$2" target="_blank" style="color:#cd9b37;text-decoration:underline;">$1</a>')
             .replace(/\n/g, '<br>');
         formattedText = formattedText.replace(
             /(https?:\/\/[^\s<"]+)/g,
