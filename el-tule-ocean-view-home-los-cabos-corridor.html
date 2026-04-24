@@ -50,6 +50,10 @@
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     /* ===== RESET ===== */
     *, *::before, *::after {
@@ -64,7 +68,7 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 18px;
       line-height: 1.75;
       color: #1A1A1A;
@@ -72,17 +76,19 @@
     }
 
     h1, h2 {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: 'Inter', sans-serif;
     }
 
     h1 {
-      font-size: 58px;
+      font-size: 56px;
+      font-weight: 800;
       line-height: 1.15;
       color: #fff;
     }
 
     h2 {
-      font-size: 32px;
+      font-size: 36px;
+      font-weight: 700;
       line-height: 1.3;
       margin-bottom: 28px;
       color: #1A1A1A;
@@ -112,9 +118,9 @@
     /* ===== BUTTONS ===== */
     .btn {
       display: inline-block;
-      background: #C9A96E;
-      color: #0A1628;
-      font-family: system-ui, -apple-system, sans-serif;
+      background: #cd9b37;
+      color: #00304e;
+      font-family: 'Inter', sans-serif;
       font-weight: 700;
       font-size: 16px;
       padding: 16px 36px;
@@ -140,7 +146,7 @@
 
     /* ===== SECTION 1: HERO ===== */
     #hero {
-      background: #0A1628;
+      background: #00304e;
       padding: 0;
     }
 
@@ -152,9 +158,10 @@
     }
 
     .hero-subhead {
-      color: #C9A96E;
+      color: #cd9b37;
       font-size: 20px;
-      font-family: Georgia, 'Times New Roman', serif;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
       margin-top: 26px;
       margin-bottom: 0;
       line-height: 1.5;
@@ -181,7 +188,7 @@
 
     /* ===== SECTION 3: VIEW ===== */
     #view {
-      background: #0A1628;
+      background: #00304e;
       color: #fff;
     }
 
@@ -195,7 +202,7 @@
     }
 
     #stats h2 {
-      color: #0A1628;
+      color: #00304e;
       text-align: center;
       margin-bottom: 48px;
     }
@@ -214,8 +221,8 @@
       display: block;
       font-size: 32px;
       font-weight: 700;
-      font-family: Georgia, serif;
-      color: #0A1628;
+      font-family: 'Inter', sans-serif;
+      color: #00304e;
       line-height: 1.15;
       word-break: break-word;
     }
@@ -223,7 +230,7 @@
     .stat-label {
       display: block;
       font-size: 13px;
-      color: #C9A96E;
+      color: #cd9b37;
       font-weight: 600;
       margin-top: 7px;
       line-height: 1.45;
@@ -247,7 +254,7 @@
 
     /* ===== SECTION 8: CLOSE ===== */
     #close {
-      background: #0A1628;
+      background: #00304e;
       color: #fff;
     }
 
@@ -267,7 +274,7 @@
     }
 
     #contact h2 {
-      color: #0A1628;
+      color: #00304e;
       text-align: center;
     }
 
@@ -281,7 +288,7 @@
       border: 1px solid #D0C8BA;
       padding: 14px 16px;
       font-size: 16px;
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: 'Inter', sans-serif;
       color: #1A1A1A;
       background: #fff;
       border-radius: 4px;
@@ -291,8 +298,8 @@
     }
 
     .form-field:focus {
-      outline: 2px solid #C9A96E;
-      border-color: #C9A96E;
+      outline: 2px solid #cd9b37;
+      border-color: #cd9b37;
     }
 
     .form-note {
@@ -318,7 +325,7 @@
 
     /* ===== FOOTER ===== */
     footer {
-      background: #0A1628;
+      background: #00304e;
       color: #fff;
       text-align: center;
       padding: 72px 24px;
@@ -341,10 +348,133 @@
       height: 320px;
     }
 
+    /* ===== BULLET LISTS ===== */
+    .feature-list {
+      list-style: none;
+      padding-left: 24px;
+      margin-top: 4px;
+      margin-bottom: 22px;
+    }
+
+    .feature-list li {
+      font-size: 18px;
+      line-height: 1.75;
+      color: #1A1A1A;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "\25AA";
+      color: #cd9b37;
+      position: absolute;
+      left: -20px;
+      top: 1px;
+    }
+
+    /* ===== MODAL ===== */
+    #modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #modal-overlay.is-open {
+      display: flex;
+    }
+
+    #modal-box {
+      background: #fff;
+      border-radius: 8px;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px;
+      position: relative;
+    }
+
+    #modal-box h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #00304e;
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    #modal-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      font-size: 28px;
+      line-height: 1;
+      color: #888;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    #modal-close:hover {
+      color: #333;
+    }
+
+    .modal-buttons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .modal-btn {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 24px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      line-height: 1.4;
+      transition: opacity 0.15s;
+    }
+
+    .modal-btn:hover {
+      opacity: 0.88;
+    }
+
+    .modal-btn-navy {
+      background: #00304e;
+      color: #fff;
+    }
+
+    .modal-btn-gold {
+      background: #cd9b37;
+      color: #00304e;
+    }
+
+    .modal-note {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+      .modal-buttons { flex-direction: column; }
+      #modal-box { padding: 32px 24px; }
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
       h1 { font-size: 34px; }
-      h2 { font-size: 24px; }
+      h2 { font-size: 26px; }
       body { font-size: 16px; }
 
       section { padding: 44px 0; }
@@ -380,7 +510,7 @@
     <p class="hero-subhead">They do things nobody else does. And now, after 8.5 years, he's leaving. Everything stays.</p>
     <p class="hero-caption">El Tule &nbsp;&middot;&nbsp; Los Cabos Corridor &nbsp;&middot;&nbsp; 4 Bed / 3.5 Bath / 3,233 sq ft &nbsp;&middot;&nbsp; $1,225,000</p>
     <div class="hero-cta">
-      <a href="#contact" class="btn">Schedule a Private Showing</a>
+      <button class="btn open-modal-btn">Schedule a Private Showing</button>
     </div>
   </div>
 </section>
@@ -473,13 +603,18 @@
 <section id="infrastructure">
   <div class="container">
     <h2>Built Like Someone Who Was Staying</h2>
-    <p>Most homes at this price on the corridor have one septic system. This one has three &mdash; one for the kitchen, one for the laundry, one for the bathrooms and hot tub &mdash; plus a master overflow if any of them fail. In fifteen-plus years of existence, this house has never had a sewage problem. That&rsquo;s not luck.</p>
-    <p>The water system follows the same logic. A 10,000-liter underground tank. Two well pumps with a full backup. Municipal water arrives 24 hours a day, 7 days a week &mdash; no trucks, no rationing, no interruptions. Notarios live on this street. Hotels operate nearby. The water doesn&rsquo;t stop here, and it never has.</p>
-    <p>The windows and doors were custom-ordered from Germany. Full double-pane. The result: standing inside the living room with the windows closed, you cannot hear the Cabo wind. One visiting agent said it. Every buyer who walks through notices it.</p>
-    <p>The hurricane shutters came from Florida &mdash; the best place in the world to source hurricane protection. Custom-measured, individually fitted to every window and door on the upper level. The house seals completely. Leave for six months. Come back to exactly what you left.</p>
-    <p>The pool is PebbleTech. Not tile. Tile cracks. Tile falls. PebbleTech doesn&rsquo;t. It looks the same as the day it was finished.</p>
-    <p>The outdoor furniture on the upper terrace is Amish-made composite, brought in from Pennsylvania. It has been sitting in the Cabo sun and salt air for five years. It looks new.</p>
-    <p>The plumbing throughout the house was fully replaced by the current owner when he took possession. Not patched. Replaced.</p>
+    <ul class="feature-list">
+      <li>Triple septic system &mdash; kitchen, laundry, and bathrooms each independent, plus master overflow</li>
+      <li>10,000-liter underground water tank</li>
+      <li>Two well pumps with full backup</li>
+      <li>Two-stage water filtration &mdash; whole-house filter at the pump, dedicated filter under the kitchen sink</li>
+      <li>Municipal water 24/7 &mdash; no trucks, no rationing</li>
+      <li>Custom German double-pane windows and doors throughout</li>
+      <li>Florida-made hurricane shutters on every opening &mdash; $30,000, custom measured</li>
+      <li>PebbleTech pool &mdash; no cracking, no tile loss, no resurfacing</li>
+      <li>Amish-made composite outdoor furniture &mdash; 5 years in Cabo sun, no fading</li>
+      <li>Full plumbing replacement done by current owner</li>
+    </ul>
     <p>Nobody does any of this for a spec build. You do it when you&rsquo;re the one who has to live there.</p>
   </div>
 </section>
@@ -502,10 +637,18 @@
 <section id="lifestyle">
   <div class="container">
     <h2>What Life Looks Like From This Address</h2>
-    <p>Ten minutes to Cabo San Lucas. Ten minutes to San Jos&eacute; del Cabo. One mile from Cabo Real Golf Course. Ten-minute walk to Chileno Bay beach &mdash; one of the few genuinely swimmable beaches on the corridor.</p>
-    <p>From November through April, humpback whales pass through. You can watch them from the upper terrace with a pair of binoculars. In June and July, sea turtles nest on the beach nearby. Several nights a week, fireworks go up over the Sea of Cortez and you can see them from the terrace with a cold drink in your hand.</p>
-    <p>The maid&rsquo;s quarters has its own exterior entrance and staircase, with a bathroom already roughed in. It functions as a completely independent unit &mdash; guest suite, staff quarters, or a short-term rental running separately from the rest of the house.</p>
-    <p>The community is gated and guarded. Paved roads. A hospital is under construction nearby. Local amenities are expanding. El Tule is growing, and it&rsquo;s still early.</p>
+    <ul class="feature-list">
+      <li>10 minutes to Cabo San Lucas</li>
+      <li>10 minutes to San Jos&eacute; del Cabo</li>
+      <li>1 mile to Cabo Real Golf Course</li>
+      <li>10-minute walk to Chileno Bay beach</li>
+      <li>Humpback whales visible from upper terrace November through April</li>
+      <li>Sea turtles nesting nearby June through July</li>
+      <li>Fireworks over the Sea of Cortez visible from the terrace several nights a week</li>
+      <li>Maid&rsquo;s quarters with separate entrance and staircase &mdash; bathroom roughed in, fully independent unit</li>
+      <li>Gated and guarded community, paved roads</li>
+      <li>Hospital under construction nearby, amenities growing</li>
+    </ul>
   </div>
 </section>
 
@@ -519,7 +662,7 @@
     <p>If you&rsquo;ve been looking seriously at the Los Cabos corridor &mdash; or if you have someone who has &mdash; this is the property to see. Not because of how it photographs. Because of what it is when you&rsquo;re standing in it.</p>
     <p>Fill out the form below and Sebastian will reach out to set up a private showing.</p>
     <div class="close-cta">
-      <a href="#contact" class="btn">Schedule a Private Showing</a>
+      <button class="btn open-modal-btn">Schedule a Private Showing</button>
     </div>
   </div>
 </section>
@@ -532,6 +675,8 @@
       <input class="form-field" type="text" name="name" placeholder="Your Name" required autocomplete="name">
       <input class="form-field" type="email" name="email" placeholder="Your Email" required autocomplete="email">
       <input class="form-field" type="tel" name="phone" placeholder="Your Phone (optional)" autocomplete="tel">
+      <input type="hidden" name="tour_type" id="tour_type" value="">
+      <p style="font-size:14px;color:#555;margin-bottom:16px;text-align:center;">Prefer a virtual tour? <a href="#" id="open-modal-link" style="color:#cd9b37;text-decoration:underline;">Click here to choose your tour type.</a></p>
       <button type="submit" class="btn btn-full">I Want to See This Property</button>
     </form>
     <p class="form-note">No spam. No pressure. Sebastian will reach out personally within 24 hours.</p>
@@ -549,9 +694,12 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
+  <img src="assets/Ronival-TM-White.png" alt="Ronival Real Estate" style="height:48px;display:block;margin:0 auto 16px auto;">
+  <img src="assets/profile-pic-(2).png" alt="Sebastian De la Pe&ntilde;a, Ronival Real Estate" style="width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px auto;border:2px solid #cd9b37;">
   <p>Sebastian De la Pe&ntilde;a &nbsp;&middot;&nbsp; Ronival Real Estate</p>
   <p>+52 (624) 119-4526</p>
   <p>sdelapena@ronival.com</p>
+  <img src="assets/sellingcabohomes-white.png" alt="SellingCabo.homes" style="height:36px;display:block;margin:24px auto 0 auto;opacity:0.85;">
   <iframe
     src="https://maps.google.com/maps?q=22.970966,-109.792254&z=15&output=embed"
     title="El Tule Los Cabos Corridor location map"
@@ -560,6 +708,76 @@
     allowfullscreen
   ></iframe>
 </footer>
+
+<!-- ===== TOUR MODAL ===== -->
+<div id="modal-overlay">
+  <div id="modal-box">
+    <button id="modal-close" aria-label="Close">&times;</button>
+    <h3>How would you like to tour this property?</h3>
+    <div class="modal-buttons">
+      <button id="modal-inperson" class="modal-btn modal-btn-navy">Schedule an In-Person Tour</button>
+      <button id="modal-virtual" class="modal-btn modal-btn-gold">Request a Virtual Video Tour</button>
+    </div>
+    <p class="modal-note">No pressure. Sebastian will reach out personally within 24 hours.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var overlay = document.getElementById('modal-overlay');
+  var closeBtn = document.getElementById('modal-close');
+  var inPersonBtn = document.getElementById('modal-inperson');
+  var virtualBtn = document.getElementById('modal-virtual');
+  var tourInput = document.getElementById('tour_type');
+  var openLink = document.getElementById('open-modal-link');
+
+  function openModal() {
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  function goToContact(tourType) {
+    if (tourInput) tourInput.value = tourType;
+    closeModal();
+    var contact = document.getElementById('contact');
+    if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.open-modal-btn').forEach(function (btn) {
+    btn.addEventListener('click', openModal);
+  });
+
+  if (openLink) {
+    openLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      openModal();
+    });
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  inPersonBtn.addEventListener('click', function () {
+    goToContact('In-Person Tour');
+  });
+
+  virtualBtn.addEventListener('click', function () {
+    goToContact('Virtual Tour');
+  });
+}());
+</script>
 
 </body>
 </html>
