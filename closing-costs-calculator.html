@@ -1470,7 +1470,7 @@ layout: null
     <div class="cta-section">
         <h2>Ready to Talk to a Real Person?</h2>
         <p class="subtitle">The calculator gives you the numbers. A conversation with Sebastian gives you the strategy — which neighborhoods fit your goals, which properties are worth it, and exactly what to expect at closing.</p>
-        <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" target="_blank" class="cta-btn">Book Your Free Strategy Call</a>
+        <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" class="cta-btn">Book Your Free Strategy Call</a>
         <div class="cta-secondary">
             <a href="https://sebastian.findmexicohouses.com/" target="_blank">Or browse available properties →</a>
         </div>
@@ -1627,7 +1627,7 @@ layout: null
                         <p class="intake-ty-message">I'll personally review your answers and send you matching properties within 48 hours.</p>
                         <hr class="intake-ty-divider">
                         <p class="intake-ty-secondary">If you'd like to skip the wait and talk through your options now, you can book a free 30-minute strategy call — no obligation, just clarity.</p>
-                        <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" target="_blank" class="intake-ty-btn">Book a Free Strategy Call</a>
+                        <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" target="_blank" class="intake-ty-btn">Book a Free Strategy Call</a>
                         <p class="intake-ty-muted">Or just wait for my email — either way I'll be in touch.</p>
                     </div>
                 </div>
@@ -1730,11 +1730,11 @@ layout: null
                     '<p style="font-size: 16px; line-height: 1.7;">Based on what you shared, I\'m already thinking about a few properties that could be a strong fit. I\'ll have something in your inbox within 48 hours.</p>' +
                     '<p style="font-size: 16px; line-height: 1.7;">In the meantime, a few things that might be useful:</p>' +
                     '<ul style="font-size: 16px; line-height: 2;">' +
-                    '<li><a href="https://sellingcabo.homes/closing-costs-calculator" style="color: #cd9b37;">Los Cabos Closing Costs Calculator</a></li>' +
-                    '<li><a href="https://sellingcabo.homes/blog/fideicomiso-explained/" style="color: #cd9b37;">How the Fideicomiso Works</a></li>' +
-                    '<li><a href="https://sellingcabo.homes/blog/los-cabos-buyers-guide/" style="color: #cd9b37;">Los Cabos Buyer\'s Guide</a></li>' +
+                    '<li><a href="https://sellingcabo.homes/blog/los-cabos-closing-costs/" style="color: #cd9b37;">Los Cabos Closing Costs</a></li>' +
+                    '<li><a href="https://sellingcabo.homes/blog/how-fideicomiso-works-mexico/" style="color: #cd9b37;">How the Fideicomiso (Trust) Works</a></li>' +
+                    '<li><a href="https://sellingcabo.homes/blog/los-cabos-real-estate-buyers-guide/" style="color: #cd9b37;">Los Cabos Buyer\'s Guide</a></li>' +
                     '</ul>' +
-                    '<p style="font-size: 16px; line-height: 1.7;">If you want to skip the wait and talk now, you can <a href="https://calendar.app.google/M7pKtXRyU3xuvhzu7" style="color: #cd9b37;">book a free 30-minute strategy call here</a>.</p>' +
+                    '<p style="font-size: 16px; line-height: 1.7;">If you want to skip the wait and talk now, you can <a href="https://calendar.app.google/ChU58Ut1McPQZhQ1A" style="color: #cd9b37;">book a free 30-minute strategy call here</a>.</p>' +
                     '<p style="font-size: 16px; line-height: 1.7;">Talk soon,<br/>' +
                     '<strong>Sebastian De la Peña</strong><br/>' +
                     'Los Cabos Real Estate Specialist | Ronival Real Estate<br/>' +
@@ -1743,6 +1743,30 @@ layout: null
                     '</div>'
             })
         }).catch(function (err) { console.error('Email send error:', err); });
+
+        fetch('https://anthropic-proxy.sedelap.workers.dev/email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                from: 'Sebastian Dee <sebastiandee@sellingcabo.homes>',
+                to: ['sdelapena@ronival.com'],
+                subject: 'New lead from calculator: ' + nameVal,
+                html: '<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #1a1a2e;">' +
+                    '<h2 style="color: #00304e; border-bottom: 2px solid #cd9b37; padding-bottom: 8px;">New Lead from Closing Costs Calculator</h2>' +
+                    '<table style="width: 100%; border-collapse: collapse; font-size: 15px;">' +
+                    '<tr><td style="padding: 8px 4px; font-weight: bold; width: 40%;">Name</td><td style="padding: 8px 4px;">' + nameVal + '</td></tr>' +
+                    '<tr style="background:#f5f5f5"><td style="padding: 8px 4px; font-weight: bold;">Email</td><td style="padding: 8px 4px;">' + emailVal + '</td></tr>' +
+                    '<tr><td style="padding: 8px 4px; font-weight: bold;">Phone</td><td style="padding: 8px 4px;">' + phoneVal + '</td></tr>' +
+                    '<tr style="background:#f5f5f5"><td style="padding: 8px 4px; font-weight: bold;">Location Preference</td><td style="padding: 8px 4px;">' + areas + '</td></tr>' +
+                    '<tr><td style="padding: 8px 4px; font-weight: bold;">Budget</td><td style="padding: 8px 4px;">' + budget + '</td></tr>' +
+                    '<tr style="background:#f5f5f5"><td style="padding: 8px 4px; font-weight: bold;">Purpose</td><td style="padding: 8px 4px;">' + goal + '</td></tr>' +
+                    '<tr><td style="padding: 8px 4px; font-weight: bold;">Financing</td><td style="padding: 8px 4px;">' + financing + '</td></tr>' +
+                    '<tr style="background:#f5f5f5"><td style="padding: 8px 4px; font-weight: bold;">Buying Process Knowledge</td><td style="padding: 8px 4px;">' + process + '</td></tr>' +
+                    '<tr><td style="padding: 8px 4px; font-weight: bold;">Timeline</td><td style="padding: 8px 4px;">' + timeline + '</td></tr>' +
+                    '<tr style="background:#f5f5f5"><td style="padding: 8px 4px; font-weight: bold;">Submitted At</td><td style="padding: 8px 4px;">' + new Date().toLocaleString() + '</td></tr>' +
+                    '</table></div>'
+            })
+        }).catch(function (err) { console.error('Lead notification error:', err); });
     }
 
     window.intakeNext = function () {
@@ -1974,7 +1998,7 @@ layout: null
     const SYSTEM_PROMPT = `You are a knowledgeable Los Cabos real estate assistant for Sebastian Dee at SellingCabo.Homes (Ronival Real Estate). Your role is to help potential property buyers understand the Los Cabos real estate market, the buying process, and closing costs.
 
 ABOUT SEBASTIAN:
-Sebastian Dee is a Los Cabos real estate specialist with Ronival Real Estate. He works with serious, financially qualified buyers who want an education-first approach. He offers a free 30-minute Acquisition Strategy Session. His calendar: https://calendar.app.google/M7pKtXRyU3xuvhzu7
+Sebastian Dee is a Los Cabos real estate specialist with Ronival Real Estate. He works with serious, financially qualified buyers who want an education-first approach. He offers a free 30-minute Acquisition Strategy Session. His calendar: https://calendar.app.google/ChU58Ut1McPQZhQ1A
 
 YOUR KNOWLEDGE - KEY FACTS (verified April 2026):
 - Closing costs in Los Cabos: 4-9% of property value depending on price tier and buyer type
@@ -2008,7 +2032,7 @@ CONVERSATION RULES:
 2. Be specific with numbers when you know them — vague answers frustrate buyers
 3. Always note that costs are estimates and vary by notary/lawyer/exchange rate
 4. After 2-3 substantive exchanges, naturally ask: "Would you like to connect with Sebastian directly? He offers a free 30-minute strategy call where he can give you specific guidance for your situation."
-5. If someone asks to book, speak to a human, or wants contact: give them this link: https://calendar.app.google/M7pKtXRyU3xuvhzu7
+5. If someone asks to book, speak to a human, or wants contact: give them this link: https://calendar.app.google/ChU58Ut1McPQZhQ1A
 6. Capture leads naturally - if someone seems serious, ask "What's your target price range and timeline?" to qualify them
 7. Never make up specific property prices or guarantee investment returns
 8. You represent Sebastian's brand: honest, educational, no pressure
@@ -2087,7 +2111,7 @@ CONVERSATION RULES:
 
         } catch (err) {
             hideTyping();
-            addMessage("I'm having trouble connecting right now. You can reach Sebastian directly at <a href='mailto:sdelapena@ronival.com' style='color:var(--gold)'>sdelapena@ronival.com</a> or <a href='https://calendar.app.google/M7pKtXRyU3xuvhzu7' style='color:var(--gold)' target='_blank'>book a call here</a>.", 'bot');
+            addMessage("I'm having trouble connecting right now. You can reach Sebastian directly at <a href='mailto:sdelapena@ronival.com' style='color:var(--gold)'>sdelapena@ronival.com</a> or <a href='https://calendar.app.google/ChU58Ut1McPQZhQ1A' style='color:var(--gold)' target='_blank'>book a call here</a>.", 'bot');
         }
 
         isTyping = false;
