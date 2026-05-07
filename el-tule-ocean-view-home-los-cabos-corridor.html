@@ -742,7 +742,8 @@
   <div class="container">
     <h2>This Is Not a Property for Everyone. It Might Be for You.</h2>
     <p>This property isn&rsquo;t for the buyer who wants the obvious choice. The ones who pay $120,000 a year in HOA fees for the right address and then wonder why they never feel ahead.</p>
-    <p>It&rsquo;s for the buyer who did the research. Who ran the numbers. Who understood that a view worth paying for is only worth paying for if it&rsquo;s still there in ten years &mdash; and that the infrastructure behind the walls matters more than the name above the gate.</p>
+    <p>It&rsquo;s for the buyer who did the research. Who ran the numbers. Who understood that a view worth paying for is only worth paying for if it&rsquo;s still there in ten years &mdash; and that the infrastructure behind the walls matters more than the name above the gate. The one who moves while everyone else is still talking about it. That buyer has a name on this corridor. The Corridor Insider. There&rsquo;s only one of this house. There&rsquo;s only one of you.</p>
+    <p>This listing has drawn inquiries from buyers across the US, Canada, Mexico, the UK, and as far as Singapore. The Los Cabos corridor is not a local secret anymore. The people doing their homework globally have found it. The question is whether the right buyer moves before someone else does.</p>
     <p>The owner has lived here full-time for eight and a half years. He built it to stay in it forever and maintained it exactly that way. He is not testing the market. The number is $1,225,000. Everything inside the house stays &mdash; furniture, appliances, televisions, outdoor furniture, linens. He is ready to close, and can do so in as little as two weeks.</p>
     <p>Fill out the form below. Sebastian will reach out personally within 24 hours to schedule your showing &mdash; in person or virtual, whatever works for you.</p>
     <div class="close-cta">
@@ -764,6 +765,13 @@
       <button type="submit" class="btn btn-full">I Want to See This Property</button>
     </form>
     <p class="form-note">No spam. No pressure. Sebastian will reach out personally within 24 hours.</p>
+
+    <div style="margin-top:32px;text-align:center;">
+      <div style="width:40px;height:1px;background:#cd9b37;margin:0 auto 24px auto;"></div>
+      <p style="font-style:italic;color:#555;font-size:0.9rem;margin-bottom:12px;">Not ready to schedule yet?</p>
+      <p style="font-weight:700;color:#00304e;font-size:1rem;margin-bottom:16px;">Get the full property brief sent to your inbox &mdash; specs, legal details, infrastructure breakdown, and contractor quotes. Everything you need to make a serious decision, in one document.</p>
+      <button id="open-brief-btn" style="display:inline-block;background:transparent;border:2px solid #00304e;color:#00304e;font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:600;padding:12px 28px;border-radius:4px;cursor:pointer;transition:background 0.15s,color 0.15s;">Send Me the Property Brief</button>
+    </div>
   </div>
 </section>
 
@@ -794,6 +802,21 @@
     allowfullscreen
   ></iframe>
 </footer>
+
+<!-- ===== PROPERTY BRIEF MODAL ===== -->
+<div id="brief-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;">
+  <div style="background:#fff;border-radius:8px;max-width:480px;width:100%;padding:40px;position:relative;box-sizing:border-box;">
+    <button id="brief-close" aria-label="Close" style="position:absolute;top:14px;right:18px;font-size:28px;line-height:1;color:#888;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;">&times;</button>
+    <h3 style="font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:#00304e;margin-bottom:8px;line-height:1.3;">Get the Full Property Brief</h3>
+    <p style="font-size:14px;color:#555;margin-bottom:24px;">Specs, legal details, infrastructure breakdown, and contractor quotes &mdash; sent directly to your inbox.</p>
+    <form id="brief-form" action="mailto:sdelapena@ronival.com" method="GET">
+      <input type="hidden" name="subject" value="Property Brief Request — El Tule">
+      <input class="form-field" type="email" name="email" placeholder="Your Email Address" required autocomplete="email" style="margin-bottom:16px;">
+      <button type="submit" class="btn btn-full">Send It</button>
+    </form>
+    <p style="text-align:center;font-size:13px;color:#888;margin-top:16px;margin-bottom:0;">No spam. One document. That&rsquo;s it.</p>
+  </div>
+</div>
 
 <!-- ===== TOUR MODAL ===== -->
 <div id="modal-overlay">
@@ -862,6 +885,47 @@
   virtualBtn.addEventListener('click', function () {
     goToContact('Virtual Tour');
   });
+}());
+</script>
+
+<script>
+(function () {
+  var briefOverlay = document.getElementById('brief-overlay');
+  var briefCloseBtn = document.getElementById('brief-close');
+  var openBriefBtn = document.getElementById('open-brief-btn');
+
+  function openBrief() {
+    briefOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeBrief() {
+    briefOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  if (openBriefBtn) openBriefBtn.addEventListener('click', openBrief);
+  if (briefCloseBtn) briefCloseBtn.addEventListener('click', closeBrief);
+
+  briefOverlay.addEventListener('click', function (e) {
+    if (e.target === briefOverlay) closeBrief();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && briefOverlay.style.display === 'flex') closeBrief();
+  });
+
+  var openBriefBtnHover = document.getElementById('open-brief-btn');
+  if (openBriefBtnHover) {
+    openBriefBtnHover.addEventListener('mouseenter', function () {
+      this.style.background = '#00304e';
+      this.style.color = '#fff';
+    });
+    openBriefBtnHover.addEventListener('mouseleave', function () {
+      this.style.background = 'transparent';
+      this.style.color = '#00304e';
+    });
+  }
 }());
 </script>
 
